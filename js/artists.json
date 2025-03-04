@@ -1,0 +1,62 @@
+{
+  "Mariah Carey": {
+    "image": "../assets/dummy-post-square.jpg"
+  },
+  "Rihanna": {
+    "image": "../assets/dummy-post-square.jpg"
+  },
+  "Usher": {
+    "image": "../assets/dummy-post-square.jpg"
+  },
+  "Bruno Mars": {
+    "image": "../assets/dummy-post-square.jpg"
+  },
+  "Taylor Swift": {
+    "image": "../assets/dummy-post-square.jpg"
+  },
+  "TJ Monterde": {
+    "image": "../assets/dummy-post-square.jpg"
+  },
+  "Ne-Yo": {
+    "image": "../assets/dummy-post-square.jpg"
+  },
+  "BTS": {
+    "image": "../assets/dummy-post-square.jpg"
+  },
+  "Blackpink": {
+    "image": "../assets/dummy-post-square.jpg"
+  },
+  "Dionela": {
+    "image": "../assets/dummy-post-square.jpg"
+  },
+  "Arthur Nery": {
+    "image": "../assets/dummy-post-square.jpg"
+  },
+  "Beyonce": {
+    "image": "../assets/dummy-post-square.jpg"
+  },
+  "Chris Brown": {
+    "image": "../assets/dummy-post-square.jpg"
+  },
+  "Lady Gaga": {
+    "image": "../assets/dummy-post-square.jpg"
+  },
+  "Ariana Grande": {
+    "image": "../assets/dummy-post-square.jpg"
+  },
+  "Ben & Ben": {
+    "image": "../assets/dummy-post-square.jpg"
+  },
+  "Artic Monkeys": {
+    "image": "../assets/dummy-post-square.jpg"
+  },
+  "BINI": {
+    "image": "../assets/dummy-post-square.jpg"
+  },
+  "SB19": {
+    "image": "../assets/dummy-post-square.jpg"
+  },
+  "Ed Sheeran": {
+    "image": "../assets/dummy-post-square.jpg"
+  }
+}
