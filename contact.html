@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -168,7 +169,7 @@
     <main class="flex-1">
         <!-- Hero Section -->
         <section class="container mx-auto px-4 py-12 md:py-20">
-            <div class="max-w-3xl mx-auto text-center">
+            <div class="max-w-3xl mx-auto text-center" data-aos="fade-up" data-aos-duration="1000">
                 <h1 class="font-display text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-jammify-teal bg-clip-text text-transparent">
                     Get in Touch
                 </h1>
@@ -182,7 +183,7 @@
         <section class="container mx-auto px-4 py-12">
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Email -->
-                <div class="contact-card glass-card p-8 rounded-2xl text-center">
+                <div class="contact-card glass-card p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                     <div class="contact-icon w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center bg-[#152238]/70 text-jammify-teal text-2xl">
                         <i class="fas fa-envelope"></i>
                     </div>
@@ -194,19 +195,19 @@
                 </div>
 
                 <!-- Phone -->
-                <div class="contact-card glass-card p-8 rounded-2xl text-center">
+                <div class="contact-card glass-card p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <div class="contact-icon w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center bg-[#152238]/70 text-jammify-teal text-2xl">
                         <i class="fas fa-phone"></i>
                     </div>
                     <h3 class="font-display text-xl font-semibold mb-3">Call Us</h3>
                     <p class="text-gray-300 text-sm font-light mb-4">
-                        Available Monday to Friday<br>9:00 AM - 6:00 PM EST
+                        For immediate assistance, give us a call during business hours.
                     </p>
                     <a href="tel:+1234567890" class="text-jammify-teal hover:text-white transition duration-300">+1 (234) 567-890</a>
                 </div>
 
                 <!-- Social -->
-                <div class="contact-card glass-card p-8 rounded-2xl text-center">
+                <div class="contact-card glass-card p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                     <div class="contact-icon w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center bg-[#152238]/70 text-jammify-teal text-2xl">
                         <i class="fas fa-comments"></i>
                     </div>
@@ -232,42 +233,34 @@
         <!-- Contact Form -->
         <section class="container mx-auto px-4 py-12 md:py-20">
             <div class="max-w-2xl mx-auto">
-                <div class="glass-card p-8 md:p-12 rounded-2xl">
+                <div class="glass-card p-8 md:p-12 rounded-2xl" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="font-display text-2xl md:text-3xl font-bold mb-8 text-center">Send Us a Message</h2>
                     <form id="contact-form" class="space-y-6">
                         <div class="grid md:grid-cols-2 gap-6">
                             <div>
-                                <label for="name" class="block text-sm font-medium mb-2">Name</label>
-                                <input type="text" id="name" name="name" required
-                                    class="form-input w-full px-4 py-3 rounded-lg text-sm"
-                                    placeholder="Your name">
+                                <label for="name" class="block text-sm font-medium mb-2">Your Name</label>
+                                <input type="text" id="name" name="name" class="form-input w-full rounded-md py-3 px-4" placeholder="John Doe" required>
                             </div>
                             <div>
-                                <label for="email" class="block text-sm font-medium mb-2">Email</label>
-                                <input type="email" id="email" name="email" required
-                                    class="form-input w-full px-4 py-3 rounded-lg text-sm"
-                                    placeholder="your@email.com">
+                                <label for="email" class="block text-sm font-medium mb-2">Your Email</label>
+                                <input type="email" id="email" name="email" class="form-input w-full rounded-md py-3 px-4" placeholder="john@example.com" required>
                             </div>
                         </div>
                         <div>
                             <label for="subject" class="block text-sm font-medium mb-2">Subject</label>
-                            <input type="text" id="subject" name="subject" required
-                                class="form-input w-full px-4 py-3 rounded-lg text-sm"
-                                placeholder="What's this about?">
+                            <input type="text" id="subject" name="subject" class="form-input w-full rounded-md py-3 px-4" placeholder="How can we help you?" required>
                         </div>
                         <div>
                             <label for="message" class="block text-sm font-medium mb-2">Message</label>
-                            <textarea id="message" name="message" rows="6" required
-                                class="form-input w-full px-4 py-3 rounded-lg text-sm resize-none"
-                                placeholder="Your message here..."></textarea>
+                            <textarea id="message" name="message" rows="5" class="form-input w-full rounded-md py-3 px-4" placeholder="Your message here..." required></textarea>
                         </div>
-                        <div class="text-center">
-                            <button type="submit"
-                                class="bg-jammify-teal text-[#16253f] px-8 py-3 rounded-lg font-semibold hover:bg-white transition duration-300">
-                                Send Message  <i class="fas fa-paper-plane"></i>
-                            </button>
+                        <div>
+                            <button type="submit" class="bg-jammify-teal text-[#16253f] px-8 py-3 rounded-md font-semibold hover:bg-opacity-90 transition duration-300 w-full md:w-auto">Send Message</button>
                         </div>
                     </form>
+                    <div id="success-message" class="hidden success-message mt-6 bg-green-900/30 text-green-400 p-4 rounded-md">
+                        <i class="fas fa-check-circle mr-2"></i> Your message has been sent successfully! We'll get back to you soon.
+                    </div>
                 </div>
             </div>
         </section>
@@ -317,9 +310,17 @@
 
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="js/router.js"></script>
     <script>
         $(document).ready(function() {
+            // Initialize AOS
+            AOS.init({
+                once: true, // whether animation should happen only once - while scrolling down
+                mirror: false, // whether elements should animate out while scrolling past them
+                offset: 120, // offset (in px) from the original trigger point
+            });
+            
             // Mobile menu toggle
             $('#mobile-menu-button').click(function() {
                 $('#mobile-menu').slideToggle(300);
@@ -332,31 +333,19 @@
                 }
             });
 
-            // Handle form submission
+            // Contact form submission handling
             $('#contact-form').submit(function(e) {
                 e.preventDefault();
                 
-                // Here you would typically send the form data to your backend
-                // For now, we'll just show a success message
-                const formData = {
-                    name: $('#name').val(),
-                    email: $('#email').val(),
-                    subject: $('#subject').val(),
-                    message: $('#message').val()
-                };
-
-                // Clear the form
-                this.reset();
-
-                // Show success message
-                const successMessage = $('<div class="success-message text-center py-4 text-jammify-teal"><i class="fas fa-check-circle mr-2"></i>Thank you! We\'ll get back to you soon.</div>');
-                $(this).before(successMessage);
-
-                // Remove success message after 5 seconds
-                setTimeout(() => {
-                    successMessage.fadeOut(300, function() {
-                        $(this).remove();
-                    });
+                // In a real application, you would send the form data to a server here
+                // For now, we'll just show the success message
+                
+                $('#success-message').removeClass('hidden');
+                $('#contact-form')[0].reset();
+                
+                // Hide success message after 5 seconds
+                setTimeout(function() {
+                    $('#success-message').addClass('hidden');
                 }, 5000);
             });
         });

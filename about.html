@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -359,7 +360,7 @@
     <main class="flex-1">
         <!-- Hero Section -->
         <section class="container mx-auto px-4 py-12 md:py-20">
-            <div class="max-w-3xl mx-auto text-center">
+            <div class="max-w-3xl mx-auto text-center" data-aos="fade-up" data-aos-duration="1000">
                 <h1 class="font-display text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-jammify-teal bg-clip-text text-transparent">
                     About Jammify
                 </h1>
@@ -372,7 +373,7 @@
         <!-- Vision Section -->
         <section class="container mx-auto px-4 py-12">
             <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-                <div class="glass-card p-8 rounded-2xl">
+                <div class="glass-card p-8 rounded-2xl" data-aos="fade-right" data-aos-duration="1000">
                     <h2 class="font-display text-2xl md:text-3xl font-bold mb-4 bg-gradient-to-r from-white to-jammify-teal bg-clip-text text-transparent">
                         Our Vision
                     </h2>
@@ -380,7 +381,7 @@
                         To create a world where music connects people across boundaries, cultures, and genres. We believe in the power of music to inspire, unite, and transform lives.
                     </p>
                 </div>
-                <div class="glass-card p-8 rounded-2xl">
+                <div class="glass-card p-8 rounded-2xl" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                     <h2 class="font-display text-2xl md:text-3xl font-bold mb-4 bg-gradient-to-r from-white to-jammify-teal bg-clip-text text-transparent">
                         Our Mission
                     </h2>
@@ -393,11 +394,11 @@
 
         <!-- Team Section -->
         <section class="container mx-auto px-4 py-12 md:py-20">
-            <h2 class="font-display text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-white to-jammify-teal bg-clip-text text-transparent">
+            <h2 class="font-display text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-white to-jammify-teal bg-clip-text text-transparent" data-aos="fade-up" data-aos-duration="800">
                 Meet Our Team
             </h2>
             
-            <div class="team-carousel-container max-w-6xl mx-auto">
+            <div class="team-carousel-container max-w-6xl mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <div class="owl-carousel team-carousel">
                     <!-- Team Member 1 -->
                     <div class="team-card p-6 relative group" data-member="1">
@@ -581,10 +582,18 @@
     <!-- JavaScript includes -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="js/router.js"></script>
     <script src="js/carousel.js"></script>
     <script>
         $(document).ready(function() {
+            // Initialize AOS
+            AOS.init({
+                once: true, // whether animation should happen only once - while scrolling down
+                mirror: false, // whether elements should animate out while scrolling past them
+                offset: 120, // offset (in px) from the original trigger point
+            });
+            
             // Mobile menu toggle
             $('#mobile-menu-button').click(function() {
                 $('#mobile-menu').slideToggle(300);
