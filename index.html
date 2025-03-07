@@ -204,14 +204,17 @@
         </div>
         
         <!-- Mobile Navigation -->
-        <div id="mobile-menu" class="hidden md:hidden bg-jammify-dark-blue/95 backdrop-blur-sm border-b border-[#37E2D520]">
-            <ul class="flex flex-col space-y-3 p-4">
-                <li><a href="#" class="text-jammify-teal border-b border-jammify-teal pb-1 block">Home</a></li>
-                <li><a href="about.html" class="hover:text-jammify-teal transition duration-300 block">About</a></li>
-                <li><a href="contact.html" class="hover:text-jammify-teal transition duration-300 block">Contact</a></li>
-                <li><a href="login.html" class="border border-jammify-teal rounded-sm px-4 py-1.5 text-jammify-teal hover:bg-jammify-teal hover:text-[#16253f] transition duration-300 inline-block mt-2">Login</a></li>
+        <div id="mobile-menu" class="hidden md:hidden border-t-0 rounded-t-none absolute left-0 right-0 z-[100] transform transition-all duration-300 origin-top opacity-0 scale-y-95 bg-jammify-dark-blue w-full">
+            <ul class="flex flex-col space-y-5 p-6 my-2">
+                <li><a href="#" class="text-jammify-teal border-b border-jammify-teal pb-1 block text-sm font-medium">Home</a></li>
+                <li><a href="about.html" class="hover:text-jammify-teal transition duration-300 block text-sm font-medium">About</a></li>
+                <li><a href="contact.html" class="hover:text-jammify-teal transition duration-300 block text-sm font-medium">Contact</a></li>
+                <li><a href="login.html" class="border border-jammify-teal rounded-md px-6 py-2.5 text-sm font-semibold text-jammify-teal hover:bg-jammify-teal hover:text-[#16253f] transition duration-300 inline-block mt-2 w-full text-center">Login</a></li>
             </ul>
         </div>
+
+        <!-- Mobile Menu Backdrop -->
+        <div id="mobile-menu-backdrop" class="fixed inset-0 bg-black bg-opacity-50 z-[99] hidden backdrop-blur-sm md:hidden"></div>
     </header>
 
     <!-- Hero Section -->
@@ -229,7 +232,7 @@
                     <a href="about.html" class="hero-button bg-transparent border border-jammify-teal text-jammify-teal px-8 py-3 rounded-md font-semibold hover:bg-jammify-teal hover:text-[#16253f] transition duration-300">Learn More</a>
                 </div>
             </div>
-            <div class="hero-image-container" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <div class="hero-image-container hidden md:block" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                 <img src="assets/images/person-1.png" alt="Person" class="mx-auto w-full max-w-xl">
             </div>
         </div>
@@ -336,27 +339,72 @@
     <!-- JavaScript includes -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/mobile-nav.js"></script>
     <script>
         $(document).ready(function() {
             // Initialize AOS
             AOS.init({
-                once: true, // whether animation should happen only once - while scrolling down
-                mirror: false, // whether elements should animate out while scrolling past them
-                offset: 120, // offset (in px) from the original trigger point
+                once: true,
+                mirror: false,
+                offset: 120,
             });
             
-            // Mobile menu toggle
-            $('#mobile-menu-button').click(function() {
-                $('#mobile-menu').slideToggle(300);
+            // Improved Mobile menu toggle with enhanced animation
+            $('#mobile-menu-button').on('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                if ($('#mobile-menu').hasClass('hidden')) {
+                    // Open menu
+                    $('#mobile-menu').removeClass('hidden');
+                    $('#mobile-menu-backdrop').removeClass('hidden');
+                    $('body').addClass('overflow-hidden');
+                    
+                    // Animate in - use a slightly longer timeout to ensure DOM is ready
+                    setTimeout(function() {
+                        $('#mobile-menu').removeClass('opacity-0 scale-y-95').addClass('opacity-100 scale-y-100');
+                    }, 50);
+                } else {
+                    // Close menu - fix the animation sequence
+                    $('#mobile-menu').removeClass('opacity-100 scale-y-100').addClass('opacity-0 scale-y-95');
+                    
+                    // Hide after animation completes
+                    setTimeout(function() {
+                        $('#mobile-menu').addClass('hidden');
+                        $('#mobile-menu-backdrop').addClass('hidden');
+                        $('body').removeClass('overflow-hidden');
+                    }, 300);
+                }
+            });
+            
+            // Make sure clicks on the menu itself don't close it
+            $('#mobile-menu').on('click', function(e) {
+                e.stopPropagation();
+            });
+            
+            // Close mobile menu when clicking backdrop
+            $('#mobile-menu-backdrop').on('click', function() {
+                // Close menu
+                $('#mobile-menu').removeClass('opacity-100 scale-y-100').addClass('opacity-0 scale-y-95');
+                
+                // Hide after animation completes
+                setTimeout(function() {
+                    $('#mobile-menu').addClass('hidden');
+                    $('#mobile-menu-backdrop').addClass('hidden');
+                    $('body').removeClass('overflow-hidden');
+                }, 300);
             });
             
             // Close mobile menu on window resize if screen becomes large
             $(window).resize(function() {
                 if ($(window).width() >= 768) {
-                    $('#mobile-menu').hide();
+                    $('#mobile-menu').addClass('hidden opacity-0 scale-y-95').removeClass('opacity-100 scale-y-100');
+                    $('#mobile-menu-backdrop').addClass('hidden');
+                    $('body').removeClass('overflow-hidden');
                 }
             });
         });
     </script>
+
 </body>
 </html>

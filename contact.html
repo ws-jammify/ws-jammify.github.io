@@ -155,14 +155,17 @@
         </div>
         
         <!-- Mobile Navigation -->
-        <div id="mobile-menu" class="hidden md:hidden glass-card border-t-0 rounded-t-none">
-            <ul class="flex flex-col space-y-3 p-4">
+        <div id="mobile-menu" class="hidden md:hidden glass-card border-t-0 rounded-t-none absolute left-0 right-0 z-50 transform transition-all duration-300 origin-top opacity-0 scale-y-95">
+            <ul class="flex flex-col space-y-5 p-6 my-2">
                 <li><a href="index.html" class="hover:text-jammify-teal transition duration-300 block text-sm font-medium">Home</a></li>
                 <li><a href="about.html" class="hover:text-jammify-teal transition duration-300 block text-sm font-medium">About</a></li>
                 <li><a href="#" class="text-jammify-teal border-b border-jammify-teal pb-1 block text-sm font-medium">Contact</a></li>
-                <li><a href="login.html" class="border border-jammify-teal rounded-md px-6 py-2 text-sm font-semibold text-jammify-teal hover:bg-jammify-teal hover:text-[#16253f] transition duration-300 inline-block mt-2">Login</a></li>
+                <li><a href="login.html" class="border border-jammify-teal rounded-md px-6 py-2.5 text-sm font-semibold text-jammify-teal hover:bg-jammify-teal hover:text-[#16253f] transition duration-300 inline-block mt-2 w-full text-center">Login</a></li>
             </ul>
         </div>
+
+        <!-- Mobile Menu Backdrop -->
+        <div id="mobile-menu-backdrop" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden backdrop-blur-sm md:hidden"></div>
     </header>
 
     <!-- Main Content -->
@@ -312,27 +315,16 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="js/router.js"></script>
+    <script src="js/mobile-nav.js"></script>
     <script>
         $(document).ready(function() {
             // Initialize AOS
             AOS.init({
-                once: true, // whether animation should happen only once - while scrolling down
-                mirror: false, // whether elements should animate out while scrolling past them
-                offset: 120, // offset (in px) from the original trigger point
+                once: true,
+                mirror: false,
+                offset: 120,
             });
             
-            // Mobile menu toggle
-            $('#mobile-menu-button').click(function() {
-                $('#mobile-menu').slideToggle(300);
-            });
-            
-            // Close mobile menu on window resize if screen becomes large
-            $(window).resize(function() {
-                if ($(window).width() >= 768) {
-                    $('#mobile-menu').hide();
-                }
-            });
-
             // Contact form submission handling
             $('#contact-form').submit(function(e) {
                 e.preventDefault();
