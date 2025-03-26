@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-jammify-blue text-jammify-light m-0 min-h-screen;
+  }
+
+  #root {
+    @apply min-h-screen flex flex-col;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg duration-300 ease-in-out;
+  }
+  
+  .btn-primary {
+    @apply bg-jammify-teal text-jammify-dark-blue hover:bg-opacity-90;
+  }
+  
+  .btn-outline {
+    @apply border border-jammify-teal text-jammify-teal hover:bg-jammify-teal hover:text-jammify-dark-blue;
+  }
+  
+  .nav-link {
+    @apply text-jammify-light/70 hover:text-jammify-teal duration-300;
+  }
+  
+  .nav-link.active {
+    @apply text-jammify-teal;
+  }
+
+  .glass-card {
+    @apply bg-[#1A2C51]/50 backdrop-blur-lg border border-white/10;
+  }
+
+  .glass-header {
+    @apply bg-jammify-dark-blue/70 backdrop-blur-md border-b border-white/10;
+  }
+
+  .form-input {
+    @apply w-full px-4 py-2 bg-jammify-dark-blue/50 border border-white/10 rounded-lg focus:outline-none focus:border-jammify-teal duration-300 ease-in-out;
+  }
+
+  .form-button {
+    @apply px-6 py-2 bg-jammify-teal text-jammify-dark-blue font-semibold rounded-lg hover:bg-opacity-90 duration-300 ease-in-out;
+  }
+
+  .hero-button {
+    @apply px-8 py-3 rounded-md font-semibold duration-300;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-jammify-dark-blue;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-jammify-teal/30 rounded-full hover:bg-jammify-teal/50;
+}
