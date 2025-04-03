@@ -21,6 +21,18 @@
     <meta property="og:title" content="Jammify | Your Music, Your Way">
     <meta property="og:description" content="Jammify is a music streaming platform that offers a diverse and engaging music experience for users.">
     <meta property="og:image" content="https://jammify.me/assets/images/og-image.png">
+    <script>
+      // Check for redirect in sessionStorage
+      (function() {
+        const redirect = sessionStorage.getItem('redirect');
+        if (redirect) {
+          sessionStorage.removeItem('redirect');
+          if (redirect !== location.pathname) {
+            history.replaceState(null, null, redirect);
+          }
+        }
+      })();
+    </script>
 </head>
   <body>
     <div id="root"></div>

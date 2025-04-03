@@ -83,7 +83,7 @@ const PlayerPanel = () => {
     };
 
     // Default images
-    const DEFAULT_COVER = "/assets/images/default-album-art.jpg";
+    const DEFAULT_COVER = "/assets/images/dummy-post-square.jpg";
 
     // Get the normalized image path with fallback
     const getImageSrc = (imagePath) => {

@@ -8,8 +8,8 @@ import artistCatalog from '../../data/artistCatalog.json';
 import '../../styles/MusicList.css';
 
 // Default assets for missing content
-const DEFAULT_COVER = "/assets/images/default-album-art.jpg";
-const DEFAULT_AUDIO = "/assets/audio/sample-audio.ogg";
+const DEFAULT_COVER = "/assets/images/dummy-post-square.jpg";
+const DEFAULT_AUDIO = "/assets/audio/faded.ogg";
 
 // Local storage key for liked songs
 const LIKED_SONGS_KEY = 'jammify_liked_songs';

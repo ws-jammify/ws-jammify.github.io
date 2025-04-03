@@ -9,8 +9,8 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "clean": "rimraf node_modules/.cache/gh-pages",
-    "predeploy": "npm run clean && npm run build",
+    "clean": "rimraf node_modules/.cache/gh-pages && rimraf dist",
+    "predeploy": "npm run clean && npm run build && echo \"Removing static assets from dist...\" && rimraf \"dist/assets/audio\" \"dist/assets/images\" \"dist/assets/text-files\"",
     "deploy": "gh-pages --dist dist --add --git git"
   },
   "dependencies": {

@@ -13,8 +13,8 @@ export function useAudio() {
 }
 
 // Default assets for missing content
-const DEFAULT_COVER = "/assets/images/default-album-art.jpg";
-const DEFAULT_AUDIO = "/assets/audio/sample-audio.ogg";
+const DEFAULT_COVER = "/assets/images/dummy-post-square.jpg";
+const DEFAULT_AUDIO = "/assets/audio/faded.ogg";
 
 // Normalize path to ensure it starts with a forward slash
 const normalizePath = (path) => {

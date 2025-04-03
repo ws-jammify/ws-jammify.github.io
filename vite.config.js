@@ -21,5 +21,8 @@ export default defineConfig({
     assetsInclude: ['**/*.mp3', '**/*.wav', '**/*.ogg'],
     // Copy audio files directly without processing
     copyPublicDir: true
+  },
+  server: {
+    historyApiFallback: true
   }
 })

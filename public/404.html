@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jammify - Redirecting...</title>
+  <script>
+    // Get the current path and query string
+    const path = window.location.pathname;
+    const search = window.location.search;
+    
+    // Store the full path in the session storage
+    sessionStorage.setItem('redirect', path + search);
+    
+    // Redirect to the root
+    window.location.replace('/');
+  </script>
+</head>
+<body>
+  Redirecting...
+</body>
+</html> 

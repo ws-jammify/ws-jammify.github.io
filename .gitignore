@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Static assets
+public/assets/audio/
+public/assets/images/
+public/assets/text-files/
