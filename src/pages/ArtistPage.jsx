@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { FaChevronLeft, FaPlay, FaPause } from 'react-icons/fa';
 import MusicList from '../components/music-player/MusicList';
@@ -12,7 +12,7 @@ import '../styles/ArtistPage.css';
 const ArtistPage = () => {
   const { artistId } = useParams();
   const navigate = useNavigate();
-  const { setPlaylist } = useContext(AudioContext);
+  const { setPlaylist } = useAudio();
   const [artist, setArtist] = useState(null);
   const [artistSongs, setArtistSongs] = useState([]);
 

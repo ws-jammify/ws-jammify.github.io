@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { FaChevronLeft } from 'react-icons/fa';
 import MusicList from '../components/music-player/MusicList';
@@ -15,40 +15,8 @@ const GenrePage = () => {
   const { setPlaylist } = useAudio();
   const [genre, setGenre] = useState(null);
   const [mappedSongs, setMappedSongs] = useState([]);
-  const isInitialMount = useRef(true);
+  const hasSetPlaylist = useRef(false);
 
-  useEffect(() => {
-    // Skip the effect on the first render
-    if (isInitialMount.current) {
-      isInitialMount.current = false;
-      return;
-    }
-
-    const foundGenre = genres.find(g => g.id === genreId);
-    if (foundGenre) {
-      setGenre(foundGenre);
-      
-      // Convert genre songs to the format expected by MusicList
-      const songs = foundGenre.songs.map((song, index) => ({
-        id: `${genreId}-${index + 1}`,
-        title: song.title,
-        artist: song.artist,
-        duration: song.duration || 0,
-        audioSrc: song.audioFile.startsWith('/') ? song.audioFile : `/${song.audioFile}`,
-        image: song.coverArt.startsWith('/') ? song.coverArt : `/${song.coverArt}`,
-        artistImage: song.artistImage ? 
-          (song.artistImage.startsWith('/') ? song.artistImage : `/${song.artistImage}`) :
-          `/assets/audio/artists/${song.artist.toLowerCase().replace(/\s+/g, '_')}_artist/${song.artist.toLowerCase().replace(/\s+/g, '_')}_photo.jpg`
-      }));
-      
-      setMappedSongs(songs);
-      setPlaylist(songs);
-    } else {
-      navigate('/music-player');
-    }
-  }, [genreId, navigate, setPlaylist]);
-
-  // Initial setup on component mount
   useEffect(() => {
     const foundGenre = genres.find(g => g.id === genreId);
     if (foundGenre) {
@@ -68,11 +36,16 @@ const GenrePage = () => {
       }));
       
       setMappedSongs(songs);
-      setPlaylist(songs);
+      
+      // Only set playlist once when songs are available
+      if (songs.length > 0 && !hasSetPlaylist.current) {
+        setPlaylist(songs);
+        hasSetPlaylist.current = true;
+      }
     } else {
       navigate('/music-player');
     }
-  }, []); // Empty dependency array for initial mount only
+  }, [genreId, navigate]); // Remove setPlaylist from dependencies
 
   if (!genre) {
     return null;

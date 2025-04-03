@@ -46,12 +46,6 @@ const Login = () => {
       newErrors.email = 'Please enter a valid email address';
     }
 
-    if (!formData.password) {
-      newErrors.password = 'Password is required';
-    } else if (isSignUp && !/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/.test(formData.password)) {
-      newErrors.password = 'Password must be at least 8 characters with 1 uppercase, 1 lowercase, 1 number';
-    }
-
     if (isSignUp) {
       if (!formData.name) {
         newErrors.name = 'Full name is required';
@@ -93,18 +87,24 @@ const Login = () => {
       await new Promise(resolve => setTimeout(resolve, 800));
 
       if (isSignUp) {
-        // Signup logic
-        // Create a new user object
-        const newUser = {
-          email: formData.email,
-          password: formData.password,
-          username: formData.name
+        // Use Regina's account for signup
+        const reginaAccount = {
+          email: 'reginasantos@gmail.com',
+          password: 'reginasantos123'
         };
         
-        // In a real app, you'd send this to a server
-        // For now, just log in the user with the new account
-        login(newUser);
-        navigate('/music-player');
+        // Find Regina's account in userData
+        const user = userData.users.find(user => 
+          user.email === reginaAccount.email && 
+          user.password === reginaAccount.password
+        );
+        
+        if (user) {
+          login(user);
+          navigate('/music-player');
+        } else {
+          setLoginError('Error accessing default account');
+        }
       } else {
         // Login logic using userData.json
         const user = userData.users.find(user => 
@@ -115,7 +115,7 @@ const Login = () => {
         if (user) {
           // Successful login - store user in context
           login(user);
-        navigate('/music-player');
+          navigate('/music-player');
         } else {
           // Failed login
           setLoginError('Invalid email or password');
@@ -250,9 +250,6 @@ const Login = () => {
                         Remember me
                       </label>
                     </div>
-                  <Link to="#" className="text-xs text-jammify-teal hover:text-white">
-                      Forgot password?
-                    </Link>
                   </div>
 
                 <button
@@ -269,21 +266,6 @@ const Login = () => {
                     'Log in'
                   )}
                 </button>
-
-                <div className="text-center text-xs text-gray-400 mt-4">
-                  Or continue with
-                </div>
-
-                <div className="grid grid-cols-2 gap-3">
-                  <button className="social-btn flex items-center justify-center px-3 py-1.5 rounded-md text-xs">
-                    <i className="fab fa-google text-white mr-2"></i>
-                    Google
-                  </button>
-                  <button className="social-btn flex items-center justify-center px-3 py-1.5 rounded-md text-xs">
-                    <i className="fab fa-facebook-f text-white mr-2"></i>
-                    Facebook
-                  </button>
-                </div>
               </form>
               </div>
             </div>

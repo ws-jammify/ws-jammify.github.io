@@ -2,11 +2,13 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaSignOutAlt, FaChevronDown } from 'react-icons/fa';
 import { useAuth } from '../../context/AuthContext';
+import { useAudio } from '../../context/AudioContext';
 
 const DropDown = () => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
   const { currentUser, logout } = useAuth();
+  const { setPlaylist, currentSong, isPlaying, togglePlay } = useAudio();
   const navigate = useNavigate();
   
   const username = currentUser ? currentUser.username : 'Janzen Go';
@@ -27,6 +29,13 @@ const DropDown = () => {
   };
   
   const handleLogout = () => {
+    // Stop any playing audio
+    if (isPlaying) {
+      togglePlay(); // This will pause the current playback
+    }
+    // Clear the playlist
+    setPlaylist([]);
+    // Perform logout and navigate
     logout();
     navigate('/login');
   };

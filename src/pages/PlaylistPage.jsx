@@ -23,13 +23,16 @@ const PlaylistPage = () => {
     // Convert artist name to catalog format
     const artistKey = `${artistName.toLowerCase().replace(/\s+/g, '_')}_artist`;
 
-    // Normalize the song title for comparison (handle special characters and apostrophes)
+    // Normalize the song title for comparison only (handle special characters and apostrophes)
     const normalizeTitle = (title) => {
-      return title.toLowerCase()
+      // Create a version of the title for comparison only
+      const comparisonTitle = title.toLowerCase()
         .trim()
         .replace(/[']/g, '') // Remove apostrophes
-        .replace(/[^a-z0-9\s]/g, '') // Remove special characters
+        .replace(/[^\p{L}\p{N}\s]/gu, '') // Remove special characters but keep Unicode letters/numbers
         .replace(/\s+/g, ' '); // Normalize spaces
+      
+      return comparisonTitle;
     };
     
     const normalizedSearchTitle = normalizeTitle(songTitle);
@@ -40,6 +43,7 @@ const PlaylistPage = () => {
       const song = artist.songs.find(s => 
         normalizeTitle(s.title) === normalizedSearchTitle
       );
+      if (song) return song;
     }
 
     // If not found, try searching all artists (fallback)

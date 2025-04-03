@@ -142,7 +142,7 @@ const SongPage = () => {
             </button>
           </div>
 
-          {/* Song Details */}
+          {/* Song Details 
           <div className="song-page-details-section">
             <h2 className="section-title">Song Details</h2>
             <div className="details-grid">
@@ -169,6 +169,7 @@ const SongPage = () => {
               </div>
             </div>
           </div>
+          */}
 
           {/* More from Artist */}
           {artistSongs.length > 0 && (

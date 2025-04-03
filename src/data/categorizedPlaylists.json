@@ -186,7 +186,7 @@
     },
     {
       "id": "kpop-hits",
-      "name": "K-Popanget",
+      "name": "K-Popanget 🫰",
       "description": "Top Korean pop songs",
       "image": "/assets/images/playlists/kpop.jpg",
       "songs": [
@@ -536,7 +536,7 @@
     },
     {
       "id": "old-but-gold",
-      "name": "Old But Gold",
+      "name": "Old But Gold 📻",
       "description": "Timeless classics that never go out of style",
       "image": "/assets/images/playlists/old_but_gold.jpg",
       "songs": [
@@ -658,7 +658,7 @@
     },
     {
       "id": "sheerios",
-      "name": "Sheerios",
+      "name": "Sheerios 🧑‍🦰",
       "description": "die hard Ed Sheeran fan",
       "image": "/assets/images/playlists/sheerios.jpg",
       "songs": [

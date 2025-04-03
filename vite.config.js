@@ -12,7 +12,14 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: undefined
+      },
+      input: {
+        main: './index.html'
       }
-    }
+    },
+    // Exclude audio files from processing
+    assetsInclude: ['**/*.mp3', '**/*.wav', '**/*.ogg'],
+    // Copy audio files directly without processing
+    copyPublicDir: true
   }
 })

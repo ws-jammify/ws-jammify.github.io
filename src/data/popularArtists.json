@@ -2,78 +2,108 @@
   "popularArtists": [
     {
       "id": 1,
+      "name": "Mariah Carey",
+      "image": "/assets/audio/artists/mariah_carey_artist/mariah_carey_photo.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Rihanna",
+      "image": "/assets/audio/artists/rihanna_artist/rihanna_photo.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Usher",
+      "image": "/assets/audio/artists/usher_artist/usher_photo.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Neyo",
+      "image": "/assets/audio/artists/neyo_artist/neyo_photo.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Chris Brown",
+      "image": "/assets/audio/artists/chris_brown_artist/chris_brown_photo.jpg"
+    },
+    {
+      "id": 6,
       "name": "Taylor Swift",
       "image": "/assets/audio/artists/taylor_swift_artist/taylor_swift_photo.jpg"
     },
     {
-      "id": 2,
+      "id": 7,
       "name": "Bruno Mars",
       "image": "/assets/audio/artists/bruno_mars_artist/bruno_mars_photo.jpg"
     },
     {
-      "id": 3,
+      "id": 8,
       "name": "Ed Sheeran",
       "image": "/assets/audio/artists/ed_sheeran_artist/ed_sheeran_photo.jpg"
     },
     {
-      "id": 4,
+      "id": 9,
       "name": "TJ Monterde",
       "image": "/assets/audio/artists/tj_monterde_artist/tj_monterde_photo.jpg"
     },
     {
-      "id": 5,
+      "id": 10,
       "name": "Adele",
       "image": "/assets/audio/artists/adele_artist/adele_photo.jpg"
     },
     {
-      "id": 6,
+      "id": 11,
       "name": "Zack Tabudlo",
       "image": "/assets/audio/artists/zack_tabudlo_artist/zack_tabudlo_photo.jpg"
     },
     {
-      "id": 7,
+      "id": 12,
       "name": "Beyoncé",
       "image": "/assets/audio/artists/beyonce_artist/beyonce_photo.jpg"
     },
     {
-      "id": 8,
+      "id": 13,
       "name": "The Weeknd",
       "image": "/assets/audio/artists/the_weeknd_artist/the_weeknd_photo.jpg"
     },
     {
-      "id": 9,
+      "id": 14,
       "name": "SB19",
       "image": "/assets/audio/artists/sb19_artist/sb19_photo.jpg"
     },
     {
-      "id": 10,
+      "id": 15,
       "name": "Lady Gaga",
       "image": "/assets/audio/artists/lady_gaga_artist/lady_gaga_photo.jpg"
     },
     {
-      "id": 11,
+      "id": 16,
       "name": "Billie Eilish",
       "image": "/assets/audio/artists/billie_eilish_artist/billie_eilish_photo.jpg"
     },
     {
-      "id": 12,
+      "id": 17,
       "name": "Adie",
       "image": "/assets/audio/artists/adie_artist/adie_photo.jpg"
     },
     {
-      "id": 13,
+      "id": 18,
       "name": "Ben&Ben",
-      "image": "/assets/audio/artists/ben_and_ben_artist/ben_and_ben_photo.jpg"
+      "image": "/assets/audio/artists/ben_and_ben_artist/benben_photo.jpg"
     },
     {
-      "id": 14,
+      "id": 19,
       "name": "Justin Bieber",
       "image": "/assets/audio/artists/justin_bieber_artist/justin_bieber_photo.jpg"
     },
     {
-      "id": 15,
+      "id": 20,
       "name": "BINI",
       "image": "/assets/audio/artists/bini_artist/bini_photo.jpg"
+    },
+    {
+      "id": 21,
+      "name": "BTS",
+      "image": "/assets/audio/artists/bts_artist/bts_photo.jpg"
     }
   ]
 } 

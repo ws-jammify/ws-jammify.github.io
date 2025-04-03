@@ -1,12 +1,93 @@
-# React + Vite
+# Jammify Music Player
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, feature-rich music player web application built with React and Vite. Experience your music with a beautiful interface and powerful features.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎵 Seamless audio playback with playlist support
+- 🎨 Beautiful, responsive UI inspired by modern music platforms
+- 👤 User authentication and personalized experience
+- ❤️ Like and save your favorite songs
+- 🔄 Shuffle and repeat playback modes
+- 📱 Mobile-friendly design
+- 🎼 Audio visualization
+- 📂 Genre and artist-based music organization
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 18
+- Vite
+- Howler.js for audio handling
+- Tailwind CSS for styling
+- React Router for navigation
+- Web Audio API for visualizations
+
+## Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/jammify.git
+cd jammify
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Build for production:
+```bash
+npm run build
+```
+
+## Project Structure
+
+```
+jammify/
+├── src/
+│   ├── components/     # React components
+│   ├── context/       # Context providers
+│   ├── data/          # JSON data files
+│   ├── pages/         # Page components
+│   ├── styles/        # CSS styles
+│   └── App.jsx        # Main app component
+├── public/
+│   ├── assets/        # Static assets
+│   └── index.html
+└── package.json
+```
+
+## Features in Detail
+
+### Audio Player
+- Play/pause, next/previous track controls
+- Progress bar with seek functionality
+- Volume control with mute option
+- Shuffle and repeat modes
+- Real-time audio visualization
+
+### User Experience
+- Login/Signup functionality
+- Personal playlists
+- Like/unlike songs
+- Browse by genre or artist
+- Responsive design for all devices
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Thanks to all contributors who have helped shape Jammify
+- Special thanks to the React and Vite communities
+- Audio visualization inspired by Web Audio API examples

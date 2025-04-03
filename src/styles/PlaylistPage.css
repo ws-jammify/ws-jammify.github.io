@@ -55,10 +55,6 @@
   font-size: 48px;
   font-weight: 700;
   color: white;
-  background: linear-gradient(to right, #ffffff, #ffffff, #ffffff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .playlist-details {
