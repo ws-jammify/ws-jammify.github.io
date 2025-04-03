@@ -1,0 +1,88 @@
+{
+  "popularSongs": [
+    {
+      "id": 1,
+      "title": "Marilag",
+      "artist": "Dionela",
+      "image": "/assets/audio/artists/dionela_artist/covers/marilag.jpg",
+      "audioSrc": "/assets/audio/artists/dionela_artist/audios/marilag.ogg"
+    },
+    {
+      "id": 2,
+      "title": "Blue",
+      "artist": "Yung Kai",
+      "image": "/assets/audio/artists/yung_kai_artist/covers/blue.jpg",
+      "audioSrc": "/assets/audio/artists/yung_kai_artist/audios/blue.ogg"
+    },
+    {
+      "id": 4,
+      "title": "Luther",
+      "artist": "Kendrick Lamar, SZA",
+      "image": "/assets/audio/artists/kendrick_lamar_artist/covers/luther.jpg",
+      "audioSrc": "/assets/audio/artists/kendrick_lamar_artist/audios/luther.ogg"
+    },
+    {
+      "id": 5,
+      "title": "Blink Twice",
+      "artist": "BINI",
+      "image": "/assets/audio/artists/bini_artist/covers/blink_twice.jpg",
+      "audioSrc": "/assets/audio/artists/bini_artist/audios/blink_twice.ogg"
+    },
+    {
+      "id": 6,
+      "title": "Die With A Smile",
+      "artist": "Lady Gaga, Bruno Mars",
+      "image": "/assets/audio/artists/lady_gaga_artist/covers/die_with_a_smile.jpg",
+      "audioSrc": "/assets/audio/artists/lady_gaga_artist/audios/die_with_a_smile.ogg"
+    },
+    {
+      "id": 7,
+      "title": "Blinding Lights",
+      "artist": "The Weeknd",
+      "image": "/assets/audio/artists/the_weeknd_artist/covers/blinding_lights.jpg",
+      "audioSrc": "/assets/audio/artists/the_weeknd_artist/audios/blinding_lights.ogg"
+    },
+    {
+      "id": 8,
+      "title": "Pasilyo",
+      "artist": "SunKissed Lola",
+      "image": "/assets/audio/artists/sundkissed_lola_artist/covers/pasilyo.jpg",
+      "audioSrc": "/assets/audio/artists/sundkissed_lola_artist/audios/pasilyo.ogg"
+    },
+    {
+      "id": 9,
+      "title": "Flowers",
+      "artist": "Miley Cyrus",
+      "image": "/assets/audio/artists/miley_cirus_artist/covers/flowers.jpg",
+      "audioSrc": "/assets/audio/artists/miley_cirus_artist/audios/flowers.ogg"
+    },
+    {
+      "id": 10,
+      "title": "Cruel Summer",
+      "artist": "Taylor Swift",
+      "image": "/assets/audio/artists/taylor_swift_artist/covers/cruel_summer.jpg",
+      "audioSrc": "/assets/audio/artists/taylor_swift_artist/audios/cruel_summer.ogg"
+    },
+    {
+      "id": 11,
+      "title": "Huwag Muna Tayong Umuwi",
+      "artist": "BINI",
+      "image": "/assets/audio/artists/bini_artist/covers/huwag_muna_tayong_umuwi.jpg",
+      "audioSrc": "/assets/audio/artists/bini_artist/audios/huwag_muna_tayong_umuwi.ogg"
+    },
+    {
+      "id": 12,
+      "title": "Not Like Us",
+      "artist": "Kendrick Lamar76",
+      "image": "/assets/audio/artists/kendrick_lamar_artist/covers/not_like_us.jpg",
+      "audioSrc": "/assets/audio/artists/kendrick_lamar_artist/audios/not_like_us.ogg"
+    },
+    {
+      "id": 13,
+      "title": "Araw-araw",
+      "artist": "Ben&Ben",
+      "image": "/assets/audio/artists/ben_and_ben_artist/covers/araw_araw.jpg",
+      "audioSrc": "/assets/audio/artists/ben_and_ben_artist/audios/araw_araw.ogg"
+    }
+  ]
+} 

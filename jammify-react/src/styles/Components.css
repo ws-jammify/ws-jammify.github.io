@@ -1,0 +1,22 @@
+.back-button {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+    background: rgba(21, 34, 56, 0.6);
+    border: 1px solid rgba(55, 226, 213, 0.1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .back-button i {
+    font-size: 15px;
+  }
+  
+  .back-button:hover {
+    background: rgba(55, 226, 213, 0.2);
+    color: #37E2D5;
+  }

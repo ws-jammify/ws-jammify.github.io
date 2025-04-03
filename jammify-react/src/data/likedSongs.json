@@ -1,0 +1,812 @@
+{
+  "likedSongs": [
+    {
+      "id": 1,
+      "title": "We Belong Together",
+      "artist": "Mariah Carey",
+      "image": "/assets/audio/artists/mariah_carey_artist/covers/we_belong_together.jpg",
+      "audioSrc": "/assets/audio/artists/mariah_carey_artist/audios/we_belong_together.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 2,
+      "title": "Fantasy",
+      "artist": "Mariah Carey",
+      "image": "/assets/audio/artists/mariah_carey_artist/covers/fantasy.jpg",
+      "audioSrc": "/assets/audio/artists/mariah_carey_artist/audios/fantasy.ogg",
+      "duration": "267.45"
+    },
+    {
+      "id": 3,
+      "title": "Umbrella",
+      "artist": "Rihanna",
+      "image": "/assets/audio/artists/rihanna_artist/covers/umbrella.jpg",
+      "audioSrc": "/assets/audio/artists/rihanna_artist/audios/umbrella.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 4,
+      "title": "Diamonds",
+      "artist": "Rihanna",
+      "image": "/assets/audio/artists/rihanna_artist/covers/diamonds.jpg",
+      "audioSrc": "/assets/audio/artists/rihanna_artist/audios/diamonds.ogg",
+      "duration": "225.67"
+    },
+    {
+      "id": 5,
+      "title": "Halo",
+      "artist": "Beyonce",
+      "image": "/assets/audio/artists/beyonce_artist/covers/halo.jpg",
+      "audioSrc": "/assets/audio/artists/beyonce_artist/audios/halo.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 6,
+      "title": "Irreplaceable",
+      "artist": "Beyonce",
+      "image": "/assets/audio/artists/beyonce_artist/covers/irreplaceable.jpg",
+      "audioSrc": "/assets/audio/artists/beyonce_artist/audios/irreplaceable.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 7,
+      "title": "Style",
+      "artist": "Taylor Swift",
+      "image": "/assets/audio/artists/taylor_swift_artist/covers/style.jpg",
+      "audioSrc": "/assets/audio/artists/taylor_swift_artist/audios/style.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 8,
+      "title": "Cruel Summer",
+      "artist": "Taylor Swift",
+      "image": "/assets/audio/artists/taylor_swift_artist/covers/cruel_summer.jpg",
+      "audioSrc": "/assets/audio/artists/taylor_swift_artist/audios/cruel_summer.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 9,
+      "title": "Dangerous Woman",
+      "artist": "Ariana Grande",
+      "image": "/assets/audio/artists/ariana_grande_artist/covers/dangerous_woman.jpg",
+      "audioSrc": "/assets/audio/artists/ariana_grande_artist/audios/dangerous_woman.ogg",
+      "duration": "235.95"
+    },
+    {
+      "id": 10,
+      "title": "One Last Time",
+      "artist": "Ariana Grande",
+      "image": "/assets/audio/artists/ariana_grande_artist/covers/one_last_time.jpg",
+      "audioSrc": "/assets/audio/artists/ariana_grande_artist/audios/one_last_time.ogg",
+      "duration": "197.27"
+    },
+    {
+      "id": 11,
+      "title": "Poker Face",
+      "artist": "Lady Gaga",
+      "image": "/assets/audio/artists/lady_gaga_artist/covers/poker_face.jpg",
+      "audioSrc": "/assets/audio/artists/lady_gaga_artist/audios/poker_face.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 12,
+      "title": "Bad Romance",
+      "artist": "Lady Gaga",
+      "image": "/assets/audio/artists/lady_gaga_artist/covers/bad_romance.jpg",
+      "audioSrc": "/assets/audio/artists/lady_gaga_artist/audios/bad_romance.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 13,
+      "title": "Confessions",
+      "artist": "Usher",
+      "image": "/assets/audio/artists/usher_artist/covers/confessions.jpg",
+      "audioSrc": "/assets/audio/artists/usher_artist/audios/confessions.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 14,
+      "title": "Burn",
+      "artist": "Usher",
+      "image": "/assets/audio/artists/usher_artist/covers/burn.jpg",
+      "audioSrc": "/assets/audio/artists/usher_artist/audios/burn.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 15,
+      "title": "Miss Independent",
+      "artist": "Ne-Yo",
+      "image": "/assets/audio/artists/neyo_artist/covers/miss_independent.jpg",
+      "audioSrc": "/assets/audio/artists/neyo_artist/audios/miss_independent.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 16,
+      "title": "Because of You",
+      "artist": "Ne-Yo",
+      "image": "/assets/audio/artists/neyo_artist/covers/because_of_you.jpg",
+      "audioSrc": "/assets/audio/artists/neyo_artist/audios/because_of_you.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 17,
+      "title": "With You",
+      "artist": "Chris Brown",
+      "image": "/assets/audio/artists/chris_brown_artist/covers/with_you.jpg",
+      "audioSrc": "/assets/audio/artists/chris_brown_artist/audios/with_you.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 18,
+      "title": "Under The Influence",
+      "artist": "Chris Brown",
+      "image": "/assets/audio/artists/chris_brown_artist/covers/under_the_influence.jpg",
+      "audioSrc": "/assets/audio/artists/chris_brown_artist/audios/under_the_influence.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 19,
+      "title": "Dynamite",
+      "artist": "BTS",
+      "image": "/assets/audio/artists/bts_artist/covers/dynamite.jpg",
+      "audioSrc": "/assets/audio/artists/bts_artist/audios/dynamite.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 20,
+      "title": "Fake Love",
+      "artist": "BTS",
+      "image": "/assets/audio/artists/bts_artist/covers/fake_love.jpg",
+      "audioSrc": "/assets/audio/artists/bts_artist/audios/fake_love.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 21,
+      "title": "Kill This Love",
+      "artist": "Blackpink",
+      "image": "/assets/audio/artists/blackpink_artist/covers/kill_this_love.jpg",
+      "audioSrc": "/assets/audio/artists/blackpink_artist/audios/kill_this_love.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 22,
+      "title": "DDU-DU-DDU-DU",
+      "artist": "Blackpink",
+      "image": "/assets/audio/artists/blackpink_artist/covers/ddu_du_ddu_du.jpg",
+      "audioSrc": "/assets/audio/artists/blackpink_artist/audios/ddu_du_ddu_du.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 23,
+      "title": "GENTO",
+      "artist": "SB19",
+      "image": "/assets/audio/artists/sb19_artist/covers/gento.jpg",
+      "audioSrc": "/assets/audio/artists/sb19_artist/audios/gento.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 24,
+      "title": "MAPA",
+      "artist": "SB19",
+      "image": "/assets/audio/artists/sb19_artist/covers/mapa.jpg",
+      "audioSrc": "/assets/audio/artists/sb19_artist/audios/mapa.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 25,
+      "title": "Lagi",
+      "artist": "BINI",
+      "image": "/assets/audio/artists/bini_artist/covers/lagi.jpg",
+      "audioSrc": "/assets/audio/artists/bini_artist/audios/lagi.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 26,
+      "title": "Kathang Isip",
+      "artist": "Ben&Ben",
+      "image": "/assets/audio/artists/ben_and_ben_artist/covers/kathang_isip.jpg",
+      "audioSrc": "/assets/audio/artists/ben_and_ben_artist/audios/kathang_isip.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 27,
+      "title": "Leaves",
+      "artist": "Ben&Ben",
+      "image": "/assets/audio/artists/ben_and_ben_artist/covers/leaves.jpg",
+      "audioSrc": "/assets/audio/artists/ben_and_ben_artist/audios/leaves.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 28,
+      "title": "Ikaw At Ako",
+      "artist": "TJ Monterde",
+      "image": "/assets/audio/artists/tj_monterde_artist/covers/ikaw_at_ako.jpg",
+      "audioSrc": "/assets/audio/artists/tj_monterde_artist/audios/ikaw_at_ako.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 29,
+      "title": "Ikaw At Ako Pa Rin",
+      "artist": "TJ Monterde",
+      "image": "/assets/audio/artists/tj_monterde_artist/covers/ikaw_at_ako_pa_rin.jpg",
+      "audioSrc": "/assets/audio/artists/tj_monterde_artist/audios/ikaw_at_ako_pa_rin.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 30,
+      "title": "Sugal",
+      "artist": "Dionela",
+      "image": "/assets/audio/artists/dionela_artist/covers/sugal.jpg",
+      "audioSrc": "/assets/audio/artists/dionela_artist/audios/sugal.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 31,
+      "title": "Do I Wanna Know",
+      "artist": "Arctic Monkeys",
+      "image": "/assets/audio/artists/arctic_monkeys_artist/covers/do_i_wanna_know.jpg",
+      "audioSrc": "/assets/audio/artists/arctic_monkeys_artist/audios/do_i_wanna_know.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 32,
+      "title": "R U Mine?",
+      "artist": "Arctic Monkeys",
+      "image": "/assets/audio/artists/arctic_monkeys_artist/covers/r_u_mine.jpg",
+      "audioSrc": "/assets/audio/artists/arctic_monkeys_artist/audios/r_u_mine.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 33,
+      "title": "Thinking Out Loud",
+      "artist": "Ed Sheeran",
+      "image": "/assets/audio/artists/ed_sheeran_artist/covers/thinking_out_loud.jpg",
+      "audioSrc": "/assets/audio/artists/ed_sheeran_artist/audios/thinking_out_loud.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 34,
+      "title": "Photograph",
+      "artist": "Ed Sheeran",
+      "image": "/assets/audio/artists/ed_sheeran_artist/covers/photograph.jpg",
+      "audioSrc": "/assets/audio/artists/ed_sheeran_artist/audios/photograph.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 35,
+      "title": "24K Magic",
+      "artist": "Bruno Mars",
+      "image": "/assets/audio/artists/bruno_mars_artist/covers/24k_magic.jpg",
+      "audioSrc": "/assets/audio/artists/bruno_mars_artist/audios/24k_magic.ogg",
+      "duration": "226.66"
+    },
+    {
+      "id": 36,
+      "title": "Treasure",
+      "artist": "Bruno Mars",
+      "image": "/assets/audio/artists/bruno_mars_artist/covers/treasure.jpg",
+      "audioSrc": "/assets/audio/artists/bruno_mars_artist/audios/treasure.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 37,
+      "title": "Habang Buhay",
+      "artist": "Zack Tabudlo",
+      "image": "/assets/audio/artists/zack_tabudlo_artist/covers/habang_buhay.jpg",
+      "audioSrc": "/assets/audio/artists/zack_tabudlo_artist/audios/habang_buhay.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 38,
+      "title": "Sa Ngalan Ng Pag-Ibig",
+      "artist": "December Avenue",
+      "image": "/assets/audio/artists/december_avenue_artist/covers/sa_ngalan_ng_pagibig.jpg",
+      "audioSrc": "/assets/audio/artists/december_avenue_artist/audios/sa_ngalan_ng_pagibig.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 39,
+      "title": "Mundo",
+      "artist": "IV of Spades",
+      "image": "/assets/audio/artists/iv_of_spades_artist/covers/mundo.jpg",
+      "audioSrc": "/assets/audio/artists/iv_of_spades_artist/audios/mundo.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 40,
+      "title": "Grenade",
+      "artist": "Bruno Mars",
+      "image": "/assets/audio/artists/bruno_mars_artist/covers/grenade.jpg",
+      "audioSrc": "/assets/audio/artists/bruno_mars_artist/audios/grenade.ogg",
+      "duration": "220.67"
+    },
+    {
+      "id": 41,
+      "title": "Bang Bang Bang",
+      "artist": "BigBang",
+      "image": "/assets/audio/artists/bigbang_artist/covers/bang_bang_bang.jpg",
+      "audioSrc": "/assets/audio/artists/bigbang_artist/audios/bang_bang_bang.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 42,
+      "title": "Birds of a Feather",
+      "artist": "Billie Eilish",
+      "image": "/assets/audio/artists/billie_eilish_artist/covers/birds_of_a_feather.jpg",
+      "audioSrc": "/assets/audio/artists/billie_eilish_artist/audios/birds_of_a_feather.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 43,
+      "title": "Binibini",
+      "artist": "Zack Tabudlo",
+      "image": "/assets/audio/artists/zack_tabudlo_artist/covers/binibini.jpg",
+      "audioSrc": "/assets/audio/artists/zack_tabudlo_artist/audios/binibini.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 44,
+      "title": "Stitches",
+      "artist": "Shawn Mendez",
+      "image": "/assets/audio/artists/shawn_mendez_artist/covers/stitches.jpg",
+      "audioSrc": "/assets/audio/artists/shawn_mendez_artist/audios/stitches.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 45,
+      "title": "Dilaw",
+      "artist": "Maki",
+      "image": "/assets/audio/artists/maki_artist/covers/dilaw.jpg",
+      "audioSrc": "/assets/audio/artists/maki_artist/audios/dilaw.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 46,
+      "title": "Marilag",
+      "artist": "Dionela",
+      "image": "/assets/audio/artists/dionela_artist/covers/marilag.jpg",
+      "audioSrc": "/assets/audio/artists/dionela_artist/audios/marilag.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 47,
+      "title": "Mundo",
+      "artist": "IV of Spades",
+      "image": "/assets/audio/artists/iv_of_spades_artist/covers/mundo.jpg",
+      "audioSrc": "/assets/audio/artists/iv_of_spades_artist/audios/mundo.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 48,
+      "title": "Pano",
+      "artist": "Zack Tabudlo",
+      "image": "/assets/audio/artists/zack_tabudlo_artist/covers/pano.jpg",
+      "audioSrc": "/assets/audio/artists/zack_tabudlo_artist/audios/pano.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 49,
+      "title": "Senorita",
+      "artist": "Shawn Mendez",
+      "image": "/assets/audio/artists/shawn_mendez_artist/covers/senorita.jpg",
+      "audioSrc": "/assets/audio/artists/shawn_mendez_artist/audios/senorita.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 50,
+      "title": "Namumula",
+      "artist": "Maki",
+      "image": "/assets/audio/artists/maki_artist/covers/namumula.jpg",
+      "audioSrc": "/assets/audio/artists/maki_artist/audios/namumula.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 51,
+      "title": "Hello",
+      "artist": "Adele",
+      "image": "/assets/audio/artists/adele_artist/covers/hello.jpg",
+      "audioSrc": "/assets/audio/artists/adele_artist/audios/hello.ogg",
+      "duration": "366.91"
+    },
+    {
+      "id": 52,
+      "title": "Rolling In The Deep",
+      "artist": "Adele",
+      "image": "/assets/audio/artists/adele_artist/covers/rolling_in_the_deep.jpg",
+      "audioSrc": "/assets/audio/artists/adele_artist/audios/rolling_in_the_deep.ogg",
+      "duration": "233.95"
+    },
+    {
+      "id": 53,
+      "title": "Set Fire To The Rain",
+      "artist": "Adele",
+      "image": "/assets/audio/artists/adele_artist/covers/set_fire_to_the_rain.jpg",
+      "audioSrc": "/assets/audio/artists/adele_artist/audios/set_fire_to_the_rain.ogg",
+      "duration": "243.00"
+    },
+    {
+      "id": 54,
+      "title": "Someone Like You",
+      "artist": "Adele",
+      "image": "/assets/audio/artists/adele_artist/covers/someone_like_you.jpg",
+      "audioSrc": "/assets/audio/artists/adele_artist/audios/someone_like_you.ogg",
+      "duration": "284.99"
+    },
+    {
+      "id": 55,
+      "title": "Mahika",
+      "artist": "Adie",
+      "image": "/assets/audio/artists/adie_artist/covers/mahika.jpg",
+      "audioSrc": "/assets/audio/artists/adie_artist/audios/mahika.ogg",
+      "duration": "228.51"
+    },
+    {
+      "id": 56,
+      "title": "Paraluman",
+      "artist": "Adie",
+      "image": "/assets/audio/artists/adie_artist/covers/paraluman.jpg",
+      "audioSrc": "/assets/audio/artists/adie_artist/audios/paraluman.ogg",
+      "duration": "320.28"
+    },
+    {
+      "id": 57,
+      "title": "Tahanan",
+      "artist": "Adie",
+      "image": "/assets/audio/artists/adie_artist/covers/tahanan.jpg",
+      "audioSrc": "/assets/audio/artists/adie_artist/audios/tahanan.ogg",
+      "duration": "305.23"
+    },
+    {
+      "id": 58,
+      "title": "Next Level",
+      "artist": "Aespa",
+      "image": "/assets/audio/artists/aespa_artist/covers/next_level.jpg",
+      "audioSrc": "/assets/audio/artists/aespa_artist/audios/next_level.ogg",
+      "duration": "235.67"
+    },
+    {
+      "id": 59,
+      "title": "Lonely",
+      "artist": "Akon",
+      "image": "/assets/audio/artists/akon_artist/covers/lonely.jpg",
+      "audioSrc": "/assets/audio/artists/akon_artist/audios/lonely.ogg",
+      "duration": "263.09"
+    },
+    {
+      "id": 60,
+      "title": "Maharani",
+      "artist": "Alamat",
+      "image": "/assets/audio/artists/alamat_artist/covers/maharani.jpg",
+      "audioSrc": "/assets/audio/artists/alamat_artist/audios/maharani.ogg",
+      "duration": "282.80"
+    },
+    {
+      "id": 61,
+      "title": "Let Me Down Slowly",
+      "artist": "Alec Benjamin",
+      "image": "/assets/audio/artists/alec_benjamin_artist/covers/let_me_down_slowly.jpg",
+      "audioSrc": "/assets/audio/artists/alec_benjamin_artist/audios/let_me_down_slowly.ogg",
+      "duration": "177.31"
+    },
+    {
+      "id": 62,
+      "title": "Scars To Your Beautiful",
+      "artist": "Alessia Cara",
+      "image": "/assets/audio/artists/alessia_cara_artist/covers/scars_to_your_beautiful.jpg",
+      "audioSrc": "/assets/audio/artists/alessia_cara_artist/audios/scars_to_your_beautiful.ogg",
+      "duration": "310.37"
+    },
+    {
+      "id": 63,
+      "title": "Girl On Fire",
+      "artist": "Alicia Keys",
+      "image": "/assets/audio/artists/alicia_keys_artist/covers/girl_on_fire.jpg",
+      "audioSrc": "/assets/audio/artists/alicia_keys_artist/audios/girl_on_fire.ogg",
+      "duration": "232.93"
+    },
+    {
+      "id": 64,
+      "title": "If I Ain't Got You",
+      "artist": "Alicia Keys",
+      "image": "/assets/audio/artists/alicia_keys_artist/covers/if_i_aint_got_you.jpg",
+      "audioSrc": "/assets/audio/artists/alicia_keys_artist/audios/if_i_aint_got_you.ogg",
+      "duration": "209.71"
+    },
+    {
+      "id": 65,
+      "title": "Rise Up",
+      "artist": "Andra Day",
+      "image": "/assets/audio/artists/andra_day_artist/covers/rise_up.jpg",
+      "audioSrc": "/assets/audio/artists/andra_day_artist/audios/rise_up.ogg",
+      "duration": "296.83"
+    },
+    {
+      "id": 66,
+      "title": "Love On Top",
+      "artist": "Beyonce",
+      "image": "/assets/audio/artists/beyonce_artist/covers/love_on_top.jpg",
+      "audioSrc": "/assets/audio/artists/beyonce_artist/audios/love_on_top.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 67,
+      "title": "Diva",
+      "artist": "Beyonce",
+      "image": "/assets/audio/artists/beyonce_artist/covers/diva.jpg",
+      "audioSrc": "/assets/audio/artists/beyonce_artist/audios/diva.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 68,
+      "title": "Cherry On Top",
+      "artist": "BINI",
+      "image": "/assets/audio/artists/bini_artist/covers/cherry_on_top.jpg",
+      "audioSrc": "/assets/audio/artists/bini_artist/audios/cherry_on_top.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 69,
+      "title": "Here With You",
+      "artist": "BINI",
+      "image": "/assets/audio/artists/bini_artist/covers/here_with_you.jpg",
+      "audioSrc": "/assets/audio/artists/bini_artist/audios/here_with_you.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 70,
+      "title": "The Light",
+      "artist": "BGYO",
+      "image": "/assets/audio/artists/bgyo_artist/covers/the_light.jpg",
+      "audioSrc": "/assets/audio/artists/bgyo_artist/audios/the_light.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 71,
+      "title": "I Am The Best",
+      "artist": "2ne1",
+      "image": "/assets/audio/artists/2ne1_artist/covers/i_am_the_best.jpg",
+      "audioSrc": "/assets/audio/artists/2ne1_artist/audios/i_am_the_best.ogg",
+      "duration": "214.75"
+    },
+    {
+      "id": 72,
+      "title": "She Looks So Perfect",
+      "artist": "5 Seconds Of Summer",
+      "image": "/assets/audio/artists/5_seconds_of_summer_artist/covers/she_looks_so_perfect.jpg",
+      "audioSrc": "/assets/audio/artists/5_seconds_of_summer_artist/audios/she_looks_so_perfect.ogg",
+      "duration": "218.62"
+    },
+    {
+      "id": 73,
+      "title": "Lost Stars",
+      "artist": "Adam Levine",
+      "image": "/assets/audio/artists/adam_levine_artist/covers/lost_stars.jpg",
+      "audioSrc": "/assets/audio/artists/adam_levine_artist/audios/lost_stars.ogg",
+      "duration": "274.90"
+    },
+    {
+      "id": 74,
+      "title": "All Of Me",
+      "artist": "John Legend",
+      "image": "/assets/audio/artists/john_legend_artist/covers/all_of_me.jpg",
+      "audioSrc": "/assets/audio/artists/john_legend_artist/audios/all_of_me.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 75,
+      "title": "Dayang",
+      "artist": "Alamat",
+      "image": "/assets/audio/artists/alamat_artist/covers/dayang.jpg",
+      "audioSrc": "/assets/audio/artists/alamat_artist/audios/dayang.ogg",
+      "duration": "298.04"
+    },
+    {
+      "id": 76,
+      "title": "Day And Night",
+      "artist": "Alamat",
+      "image": "/assets/audio/artists/alamat_artist/covers/day_and_night.jpg",
+      "audioSrc": "/assets/audio/artists/alamat_artist/audios/day_and_night.ogg",
+      "duration": "221.99"
+    },
+    {
+      "id": 77,
+      "title": "Perfect",
+      "artist": "Ed Sheeran",
+      "image": "/assets/audio/artists/ed_sheeran_artist/covers/perfect.jpg",
+      "audioSrc": "/assets/audio/artists/ed_sheeran_artist/audios/perfect.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 78,
+      "title": "Shape Of You",
+      "artist": "Ed Sheeran",
+      "image": "/assets/audio/artists/ed_sheeran_artist/covers/shape_of_you.jpg",
+      "audioSrc": "/assets/audio/artists/ed_sheeran_artist/audios/shape_of_you.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 79,
+      "title": "Bad Habits",
+      "artist": "Ed Sheeran",
+      "image": "/assets/audio/artists/ed_sheeran_artist/covers/bad_habits.jpg",
+      "audioSrc": "/assets/audio/artists/ed_sheeran_artist/audios/bad_habits.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 80,
+      "title": "Galway Girl",
+      "artist": "Ed Sheeran",
+      "image": "/assets/audio/artists/ed_sheeran_artist/covers/galway_girl.jpg",
+      "audioSrc": "/assets/audio/artists/ed_sheeran_artist/audios/galway_girl.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 81,
+      "title": "Roar",
+      "artist": "Katy Perry",
+      "image": "/assets/audio/artists/katy_perry_artist/covers/roar.jpg",
+      "audioSrc": "/assets/audio/artists/katy_perry_artist/audios/roar.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 82,
+      "title": "Firework",
+      "artist": "Katy Perry",
+      "image": "/assets/audio/artists/katy_perry_artist/covers/firework.jpg",
+      "audioSrc": "/assets/audio/artists/katy_perry_artist/audios/firework.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 83,
+      "title": "Just Dance",
+      "artist": "Lady Gaga",
+      "image": "/assets/audio/artists/lady_gaga_artist/covers/just_dance.jpg",
+      "audioSrc": "/assets/audio/artists/lady_gaga_artist/audios/just_dance.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 84,
+      "title": "Shallow",
+      "artist": "Lady Gaga",
+      "image": "/assets/audio/artists/lady_gaga_artist/covers/shallow.jpg",
+      "audioSrc": "/assets/audio/artists/lady_gaga_artist/audios/shallow.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 85,
+      "title": "Love Me Harder",
+      "artist": "Ariana Grande",
+      "image": "/assets/audio/artists/ariana_grande_artist/covers/love_me_harder.jpg",
+      "audioSrc": "/assets/audio/artists/ariana_grande_artist/audios/love_me_harder.ogg",
+      "duration": "236.14"
+    },
+    {
+      "id": 86,
+      "title": "You Dont Know Me",
+      "artist": "Ariana Grande",
+      "image": "/assets/audio/artists/ariana_grande_artist/covers/you_dont_know_me.jpg",
+      "audioSrc": "/assets/audio/artists/ariana_grande_artist/audios/you_dont_know_me.ogg",
+      "duration": "233.73"
+    },
+    {
+      "id": 87,
+      "title": "All I Want For Christmas Is You",
+      "artist": "Mariah Carey",
+      "image": "/assets/audio/artists/mariah_carey_artist/covers/all_i_want_for_christmas_is_you.jpg",
+      "audioSrc": "/assets/audio/artists/mariah_carey_artist/audios/all_i_want_for_christmas_is_you.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 88,
+      "title": "Bliss",
+      "artist": "Mariah Carey",
+      "image": "/assets/audio/artists/mariah_carey_artist/covers/bliss.jpg",
+      "audioSrc": "/assets/audio/artists/mariah_carey_artist/audios/bliss.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 89,
+      "title": "Sorry",
+      "artist": "Justin Bieber",
+      "image": "/assets/audio/artists/justin_bieber_artist/covers/sorry.jpg",
+      "audioSrc": "/assets/audio/artists/justin_bieber_artist/audios/sorry.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 90,
+      "title": "Love Yourself",
+      "artist": "Justin Bieber",
+      "image": "/assets/audio/artists/justin_bieber_artist/covers/love_yourself.jpg",
+      "audioSrc": "/assets/audio/artists/justin_bieber_artist/audios/love_yourself.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 91,
+      "title": "Levitating",
+      "artist": "Dua Lipa",
+      "image": "/assets/audio/artists/dua_lipa_artist/covers/levitating.jpg",
+      "audioSrc": "/assets/audio/artists/dua_lipa_artist/audios/levitating.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 92,
+      "title": "Homesick",
+      "artist": "Dua Lipa",
+      "image": "/assets/audio/artists/dua_lipa_artist/covers/homesick.jpg",
+      "audioSrc": "/assets/audio/artists/dua_lipa_artist/audios/homesick.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 93,
+      "title": "Rockstar",
+      "artist": "Post Malone",
+      "image": "/assets/audio/artists/post_malone_artist/covers/rockstar.jpg",
+      "audioSrc": "/assets/audio/artists/post_malone_artist/audios/rockstar.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 94,
+      "title": "Stay",
+      "artist": "Post Malone",
+      "image": "/assets/audio/artists/post_malone_artist/covers/stay.jpg",
+      "audioSrc": "/assets/audio/artists/post_malone_artist/audios/stay.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 95,
+      "title": "Blinding Lights",
+      "artist": "The Weeknd",
+      "image": "/assets/audio/artists/the_weeknd_artist/covers/blinding_lights.jpg",
+      "audioSrc": "/assets/audio/artists/the_weeknd_artist/audios/blinding_lights.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 96,
+      "title": "Save Your Tears",
+      "artist": "The Weeknd",
+      "image": "/assets/audio/artists/the_weeknd_artist/covers/save_your_tears.jpg",
+      "audioSrc": "/assets/audio/artists/the_weeknd_artist/audios/save_your_tears.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 97,
+      "title": "As It Was",
+      "artist": "Harry Styles",
+      "image": "/assets/audio/artists/harry_styles_artist/covers/as_it_was.jpg",
+      "audioSrc": "/assets/audio/artists/harry_styles_artist/audios/as_it_was.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 98,
+      "title": "Drivers License",
+      "artist": "Olivia Rodrigo",
+      "image": "/assets/audio/artists/olivia_rodrigo_artist/covers/drivers_license.jpg",
+      "audioSrc": "/assets/audio/artists/olivia_rodrigo_artist/audios/drivers_license.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 99,
+      "title": "Good 4 U",
+      "artist": "Olivia Rodrigo",
+      "image": "/assets/audio/artists/olivia_rodrigo_artist/covers/good_4_u.jpg",
+      "audioSrc": "/assets/audio/artists/olivia_rodrigo_artist/audios/good_4_u.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 100,
+      "title": "Yellow",
+      "artist": "Coldplay",
+      "image": "/assets/audio/artists/coldplay_artist/covers/yellow.jpg",
+      "audioSrc": "/assets/audio/artists/coldplay_artist/audios/yellow.ogg",
+      "duration": "277.39"
+    },
+    {
+      "id": 101,
+      "title": "No One",
+      "artist": "Alicia Keys",
+      "image": "/assets/audio/artists/alicia_keys_artist/covers/no_one.jpg",
+      "audioSrc": "/assets/audio/artists/alicia_keys_artist/audios/no_one.ogg",
+      "duration": "277.39"
+    }
+  ]
+} 

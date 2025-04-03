@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://jammify.me/app",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,11 +13,22 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
     "@heroicons/react": "^2.1.1",
     "aos": "^2.3.4",
+    "howler": "^2.2.4",
+    "music-metadata": "^11.0.2",
+    "node-ffprobe": "^3.0.0",
+    "node-ffprobe-installer": "^1.2.3",
     "react": "^18.2.0",
+    "react-audio-spectrum": "^0.1.5",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.1"
+    "react-howler": "^5.2.0",
+    "react-icons": "^5.5.0",
+    "react-owl-carousel": "^2.3.3",
+    "react-router-dom": "^6.22.1",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",
