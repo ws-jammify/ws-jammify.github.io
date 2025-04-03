@@ -1,0 +1,50 @@
+{
+    "users": [
+      {
+        "email": "janzengo@gmail.com",
+        "password": "janzengo123",
+        "username": "Janzen Go"
+      },
+      {
+        "email": "katrinadelacruz@gmail.com",
+        "password": "katrinadelacruz123",
+        "username": "Katrina Dela Cruz"
+      },
+      {
+        "email": "angelgonzales@gmail.com",
+        "password": "angelgonzales123",
+        "username": "Angel Gonzales"
+      },
+      {
+        "email": "rasulampato@gmail.com",
+        "password": "rasulampato123",
+        "username": "Rasul Ampato"
+      },
+      {
+        "email": "renzfernando@gmail.com",
+        "password": "renzfernando123",
+        "username": "Renz Fernando"
+      },
+      {
+        "email": "ajygarcia@gmail.com",
+        "password": "ajygarcia123",
+        "username": "Ajy Garcia"
+      },
+      {
+        "email": "reginasantos@gmail.com",
+        "password": "reginasantos123",
+        "username": "Regina Santos"
+      },
+      {
+        "email": "justingo@gmail.com",
+        "password": "justingo123",
+        "username": "Justin Go"
+      },
+      {
+        "email": "stephcurry@gmail.com",
+        "password": "stephcurry30",
+        "username": "Steph Cury"
+      }
+    ]
+  }
+  

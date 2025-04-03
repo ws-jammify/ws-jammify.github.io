@@ -7,14 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        'jammify-blue': '#16253f',
-        'jammify-dark-blue': '#0f172a',
+        'jammify-blue': '#1A2C51',
+        'jammify-dark-blue': '#152238',
         'jammify-teal': '#37E2D5',
         'jammify-light': '#f8fafc',
       },
       fontFamily: {
-        'sans': ['Plus Jakarta Sans', 'sans-serif'],
-        'display': ['Outfit', 'sans-serif'],
+        sans: ['Plus Jakarta Sans', 'Segoe UI', 'sans-serif'],
+        display: ['Outfit', 'sans-serif'],
       },
     },
   },

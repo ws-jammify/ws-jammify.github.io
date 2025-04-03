@@ -2,9 +2,13 @@ import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { useAudio } from '../context/AudioContext'
 
 const Home = () => {
   useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0)
+    
     AOS.init({
       once: true,
       mirror: false,
@@ -13,7 +17,7 @@ const Home = () => {
   }, [])
 
   return (
-    <main className="flex-1">
+    <>
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-12 md:py-16 mt-6" data-aos="fade-up" data-aos-duration="1000">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -89,16 +93,13 @@ const Home = () => {
           <p className="text-gray-300 text-lg mb-8 font-light">
             Join Jammify today and discover a world of music tailored just for you.
           </p>
-          <Link 
-            to="/login" 
-            className="hero-button bg-jammify-teal hover:bg-opacity-90 text-[#16253f] font-semibold rounded-md px-8 py-3 transition duration-300 inline-flex items-center group"
-          >
+          <Link to="/login" className="hero-button bg-jammify-teal hover:bg-opacity-90 text-[#16253f] font-semibold rounded-md px-8 py-3 transition duration-300 inline-flex items-center group">
             Sign Up Now 
             <i className="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
           </Link>
         </div>
       </section>
-    </main>
+    </>
   )
 }
 

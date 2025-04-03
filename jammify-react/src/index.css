@@ -2,6 +2,202 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Enhanced Animations and Effects */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Glassmorphism Components */
+.glass-card {
+  background: linear-gradient(135deg, rgba(26, 44, 81, 0.5) 0%, rgba(30, 55, 95, 0.3) 100%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(55, 226, 213, 0.1);
+  box-shadow: 0 8px 32px rgba(21, 34, 56, 0.2);
+}
+
+.glass-header {
+  background: linear-gradient(to bottom, rgba(21, 34, 56, 0.95), rgba(21, 34, 56, 0.8));
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(55, 226, 213, 0.1);
+}
+
+/* Hero Section Enhancements */
+.hero-image-container {
+  position: relative;
+  height: 100%;
+}
+
+.hero-image-container::before {
+  content: '';
+  position: absolute;
+  inset: -10%;
+  background: radial-gradient(ellipse at center, rgba(55, 226, 213, 0.5) 0%, rgba(55, 226, 213, 0.1) 50%, rgba(26, 44, 81, 0.05) 70%);
+  filter: blur(30px);
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.hero-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-button::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transform: rotate(45deg);
+  animation: shimmer 3s infinite;
+}
+
+/* Feature Card Enhancements */
+.feature-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(55, 226, 213, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.feature-card:hover::before {
+  opacity: 1;
+}
+
+.feature-icon-container {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(55, 226, 213, 0.1), rgba(55, 226, 213, 0.05));
+  border: 1px solid rgba(55, 226, 213, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon-container {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, rgba(55, 226, 213, 0.15), rgba(55, 226, 213, 0.08));
+  border-color: rgba(55, 226, 213, 0.2);
+}
+
+/* CTA Banner Enhancement */
+.cta-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(55, 226, 213, 0.1), transparent 70%);
+}
+
+/* Social Icons Enhancement */
+.social-icon {
+  position: relative;
+  overflow: hidden;
+}
+
+.social-icon::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(55, 226, 213, 0.2), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.social-icon:hover::before {
+  opacity: 1;
+}
+
+/* Typography Enhancements */
+h1, h2, h3, .brand-text {
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Form Styling */
+.form-input {
+  background: linear-gradient(135deg, rgba(21, 34, 56, 0.8) 0%, rgba(26, 44, 81, 0.6) 100%);
+  border: 1px solid rgba(55, 226, 213, 0.1);
+  backdrop-filter: blur(8px);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: rgba(55, 226, 213, 0.4);
+  box-shadow: 0 0 0 2px rgba(55, 226, 213, 0.1);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Contact Card Animation */
+.contact-card {
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card:hover .contact-icon {
+  transform: scale(1.1);
+  color: #37E2D5;
+}
+
+.contact-icon {
+  transition: all 0.3s ease;
+}
+
+/* Success Message Animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.success-message {
+  animation: slideDown 0.3s ease forwards;
+}
+
 @layer base {
   html {
     font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
@@ -35,18 +231,6 @@
   
   .nav-link.active {
     @apply text-jammify-teal;
-  }
-
-  .glass-card {
-    @apply bg-[#1A2C51]/50 backdrop-blur-lg border border-white/10;
-  }
-
-  .glass-header {
-    @apply bg-jammify-dark-blue/70 backdrop-blur-md border-b border-white/10;
-  }
-
-  .form-input {
-    @apply w-full px-4 py-2 bg-jammify-dark-blue/50 border border-white/10 rounded-lg focus:outline-none focus:border-jammify-teal duration-300 ease-in-out;
   }
 
   .form-button {

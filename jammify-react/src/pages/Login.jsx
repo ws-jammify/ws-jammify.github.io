@@ -1,18 +1,70 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import '../styles/Login.css';
+import userData from '../data/userData.json';
+import { useAuth } from '../context/AuthContext';
 
 const Login = () => {
-  const [isLogin, setIsLogin] = useState(true);
+  const navigate = useNavigate();
+  const { login } = useAuth();
+  const [isSignUp, setIsSignUp] = useState(false);
   const [formData, setFormData] = useState({
     email: '',
     password: '',
+    rememberMe: false,
     name: '',
-    confirmPassword: '',
-    rememberMe: false
+    confirmPassword: ''
   });
+  const [errors, setErrors] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [loginError, setLoginError] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      mirror: false,
+      offset: 120,
+    });
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const validateForm = () => {
+    const newErrors = {};
+    
+    if (!formData.email) {
+      newErrors.email = 'Email is required';
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = 'Please enter a valid email address';
+    }
+
+    if (!formData.password) {
+      newErrors.password = 'Password is required';
+    } else if (isSignUp && !/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/.test(formData.password)) {
+      newErrors.password = 'Password must be at least 8 characters with 1 uppercase, 1 lowercase, 1 number';
+    }
+
+    if (isSignUp) {
+      if (!formData.name) {
+        newErrors.name = 'Full name is required';
+      }
+      if (!formData.confirmPassword) {
+        newErrors.confirmPassword = 'Please confirm your password';
+      } else if (formData.password !== formData.confirmPassword) {
+        newErrors.confirmPassword = 'Passwords do not match';
+      }
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
   };
 
   const handleChange = (e) => {
@@ -21,142 +73,351 @@ const Login = () => {
       ...prev,
       [name]: type === 'checkbox' ? checked : value
     }));
+    
+    // Clear error when user starts typing
+    if (errors[name]) {
+      setErrors(prev => ({ ...prev, [name]: '' }));
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    if (!validateForm()) return;
+
+    setIsLoading(true);
+    setLoginError('');
+
+    try {
+      // Wait for a short period to simulate processing
+      await new Promise(resolve => setTimeout(resolve, 800));
+
+      if (isSignUp) {
+        // Signup logic
+        // Create a new user object
+        const newUser = {
+          email: formData.email,
+          password: formData.password,
+          username: formData.name
+        };
+        
+        // In a real app, you'd send this to a server
+        // For now, just log in the user with the new account
+        login(newUser);
+        navigate('/music-player');
+      } else {
+        // Login logic using userData.json
+        const user = userData.users.find(user => 
+          user.email === formData.email && 
+          user.password === formData.password
+        );
+        
+        if (user) {
+          // Successful login - store user in context
+          login(user);
+        navigate('/music-player');
+        } else {
+          // Failed login
+          setLoginError('Invalid email or password');
+        }
+      }
+    } catch (err) {
+      setErrors({ submit: 'An error occurred. Please try again.' });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const toggleView = () => {
+    setIsSignUp(!isSignUp);
+    setFormData({
+      email: '',
+      password: '',
+      rememberMe: false,
+      name: '',
+      confirmPassword: ''
+    });
+    setErrors({});
   };
 
   return (
-    <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-jammify-dark-blue via-[#1E375F] to-jammify-blue p-4">
-      <div className="w-full max-w-4xl bg-[#1A2C51]/50 backdrop-blur-lg rounded-2xl shadow-xl overflow-hidden flex">
-        {/* Form Container */}
-        <div className={`w-full md:w-1/2 p-8 transition-transform duration-500 ${isLogin ? 'translate-x-0' : '-translate-x-full'}`}>
-          <div className="relative">
-            <button
-              onClick={() => window.history.back()}
-              className="absolute -left-4 -top-4 w-8 h-8 rounded-full bg-[#152238]/70 text-jammify-teal flex items-center justify-center hover:bg-jammify-teal hover:text-[#16253f] transition duration-300"
-            >
-              <i className="fas fa-arrow-left"></i>
-            </button>
+    <div className="min-h-screen flex items-center justify-center px-4 py-12">
+      <div className="w-full max-w-4xl relative">
+        <div className={`account-container rounded-xl mobile-container ${isMobile ? 'mobile-view' : ''}`}>
+          {/* Back button */}
+          <Link 
+            to="/" 
+            className="absolute top-4 left-4 z-30 h-8 w-8 flex items-center justify-center rounded-full bg-jammify-dark-blue/80 text-jammify-teal hover:text-white hover:bg-jammify-dark-blue transition duration-300 border border-jammify-teal/30"
+          >
+            <i className="fas fa-arrow-left text-sm"></i>
+          </Link>
+
+          {/* Cover section */}
+          <div className={`cover-section ${isSignUp ? 'to-left' : ''} ${isMobile && isSignUp ? 'mobile-signup' : ''}`}>
+            <div className="blob blob-1"></div>
+            <div className="blob blob-2"></div>
+            
+            <div className="cover-content-container">
+              <div className={isSignUp ? 'hidden' : ''}>
+                <h2 className="text-2xl font-bold mb-4">New Here?</h2>
+                <p className="text-white/80 mb-6 text-sm">
+                  Join the Jammify community and unlock your musical journey today
+                </p>
+                <button 
+                  onClick={toggleView}
+                  className="border border-jammify-teal rounded-md px-5 py-2 text-sm text-jammify-teal hover:bg-jammify-teal hover:text-[#16253f] transition duration-300"
+                >
+                  Sign Up
+                </button>
+              </div>
+
+              <div className={!isSignUp ? 'hidden' : ''}>
+                <h2 className="text-2xl font-bold mb-4">Welcome Back</h2>
+                <p className="text-white/80 mb-6 text-sm">
+                  Sign in to continue your musical journey with Jammify
+                </p>
+                <button 
+                  onClick={toggleView}
+                  className="border border-jammify-teal rounded-md px-5 py-2 text-sm text-jammify-teal hover:bg-jammify-teal hover:text-[#16253f] transition duration-300"
+                >
+                  Log In
+                </button>
+              </div>
+            </div>
           </div>
-          
-          <h2 className="text-3xl font-display font-bold mb-8 text-center bg-gradient-to-r from-white to-jammify-teal bg-clip-text text-transparent">
-            {isLogin ? 'Welcome Back' : 'Create Account'}
-          </h2>
-          
-          <form onSubmit={handleSubmit} className="space-y-6">
-            {!isLogin && (
-              <div>
-                <label className="block text-sm font-medium mb-2">Full Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full rounded-md py-3 px-4 bg-[#152238]/70 border border-[#37E2D520] text-white focus:border-jammify-teal focus:ring-1 focus:ring-jammify-teal transition duration-300"
-                  placeholder="John Doe"
-                  required
-                />
+
+          {/* Login section */}
+          <div className={`form-section login-section ${!isSignUp ? 'active' : ''}`}>
+            <div className="form-wrapper">
+              <div className="text-center mb-6">
+                <div className="relative mb-2">
+                  <img src="/assets/images/brand/jammify-logo-white.png" alt="Jammify Logo" className="h-8 mx-auto" />
+                </div>
+                <h1 className="text-xl font-bold">LOGIN</h1>
+                {loginError && (
+                  <div className="mt-2 text-red-400 text-sm">{loginError}</div>
+                )}
               </div>
-            )}
-            
-            <div>
-              <label className="block text-sm font-medium mb-2">Email</label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="w-full rounded-md py-3 px-4 bg-[#152238]/70 border border-[#37E2D520] text-white focus:border-jammify-teal focus:ring-1 focus:ring-jammify-teal transition duration-300"
-                placeholder="john@example.com"
-                required
-              />
-            </div>
-            
-            <div>
-              <label className="block text-sm font-medium mb-2">Password</label>
-              <input
-                type="password"
-                name="password"
-                value={formData.password}
-                onChange={handleChange}
-                className="w-full rounded-md py-3 px-4 bg-[#152238]/70 border border-[#37E2D520] text-white focus:border-jammify-teal focus:ring-1 focus:ring-jammify-teal transition duration-300"
-                placeholder="••••••••"
-                required
-              />
-            </div>
-            
-            {!isLogin && (
-              <div>
-                <label className="block text-sm font-medium mb-2">Confirm Password</label>
-                <input
-                  type="password"
-                  name="confirmPassword"
-                  value={formData.confirmPassword}
-                  onChange={handleChange}
-                  className="w-full rounded-md py-3 px-4 bg-[#152238]/70 border border-[#37E2D520] text-white focus:border-jammify-teal focus:ring-1 focus:ring-jammify-teal transition duration-300"
-                  placeholder="••••••••"
-                  required
-                />
+
+              <form onSubmit={handleSubmit} className="space-y-4 max-w-xs mx-auto">
+                <div>
+                  <label htmlFor="login-email" className="block text-sm font-medium text-gray-300 mb-1">
+                    Email address
+                  </label>
+                  <input
+                    type="email"
+                    id="login-email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className={`form-input w-full rounded-md p-2 text-white ${errors.email ? 'input-error' : ''}`}
+                    placeholder="jammify@gmail.com"
+                  />
+                  {errors.email && (
+                    <div className="form-error visible">{errors.email}</div>
+                  )}
+                </div>
+
+                <div>
+                  <label htmlFor="login-password" className="block text-sm font-medium text-gray-300 mb-1">
+                    Password
+                  </label>
+                  <input
+                    type="password"
+                    id="login-password"
+                    name="password"
+                    value={formData.password}
+                    onChange={handleChange}
+                    className={`form-input w-full rounded-md p-2 text-white ${errors.password ? 'input-error' : ''}`}
+                    placeholder="Enter your password"
+                  />
+                  {errors.password && (
+                    <div className="form-error visible">{errors.password}</div>
+                  )}
+                </div>
+
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center">
+                      <input
+                        type="checkbox"
+                        id="rememberMe"
+                        name="rememberMe"
+                        checked={formData.rememberMe}
+                        onChange={handleChange}
+                      className="form-checkbox"
+                      />
+                    <label htmlFor="rememberMe" className="ml-2 block text-xs text-gray-300">
+                        Remember me
+                      </label>
+                    </div>
+                  <Link to="#" className="text-xs text-jammify-teal hover:text-white">
+                      Forgot password?
+                    </Link>
+                  </div>
+
+                <button
+                  type="submit"
+                  disabled={isLoading}
+                  className="submit-btn w-full bg-jammify-teal text-[#16253f] py-2 rounded-md font-medium text-sm"
+                >
+                  {isLoading ? (
+                    <>
+                      <span>Signing in...</span>
+                      <div className="spinner"></div>
+                    </>
+                  ) : (
+                    'Log in'
+                  )}
+                </button>
+
+                <div className="text-center text-xs text-gray-400 mt-4">
+                  Or continue with
+                </div>
+
+                <div className="grid grid-cols-2 gap-3">
+                  <button className="social-btn flex items-center justify-center px-3 py-1.5 rounded-md text-xs">
+                    <i className="fab fa-google text-white mr-2"></i>
+                    Google
+                  </button>
+                  <button className="social-btn flex items-center justify-center px-3 py-1.5 rounded-md text-xs">
+                    <i className="fab fa-facebook-f text-white mr-2"></i>
+                    Facebook
+                  </button>
+                </div>
+              </form>
               </div>
-            )}
-            
-            {isLogin && (
-              <div className="flex items-center justify-between">
-                <label className="flex items-center">
+            </div>
+
+          {/* Signup section */}
+          <div className={`form-section signup-section ${isSignUp ? 'active' : ''}`}>
+            <div className="form-wrapper">
+              <div className="text-center mb-6">
+                <div className="relative mb-2">
+                  <img src="/assets/images/brand/jammify-logo-white.png" alt="Jammify Logo" className="h-8 mx-auto" />
+                </div>
+                <h1 className="text-xl font-bold">SIGN UP</h1>
+              </div>
+
+              <form onSubmit={handleSubmit} className="space-y-4 max-w-xs mx-auto">
+                <div>
+                  <label htmlFor="fullname" className="block text-sm font-medium text-gray-300 mb-1">
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    id="fullname"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className={`form-input w-full rounded-md p-2 text-white ${errors.name ? 'input-error' : ''}`}
+                    placeholder="Enter your name"
+                  />
+                  {errors.name && (
+                    <div className="form-error visible">{errors.name}</div>
+                  )}
+                </div>
+
+                <div>
+                  <label htmlFor="signup-email" className="block text-sm font-medium text-gray-300 mb-1">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    id="signup-email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className={`form-input w-full rounded-md p-2 text-white ${errors.email ? 'input-error' : ''}`}
+                    placeholder="jammify@gmail.com"
+                  />
+                  {errors.email && (
+                    <div className="form-error visible">{errors.email}</div>
+                  )}
+                </div>
+
+                <div>
+                  <label htmlFor="signup-password" className="block text-sm font-medium text-gray-300 mb-1">
+                    Password
+                  </label>
+                  <input
+                    type="password"
+                    id="signup-password"
+                    name="password"
+                    value={formData.password}
+                    onChange={handleChange}
+                    className={`form-input w-full rounded-md p-2 text-white ${errors.password ? 'input-error' : ''}`}
+                    placeholder="Choose a password"
+                  />
+                  {errors.password && (
+                    <div className="form-error visible">{errors.password}</div>
+                  )}
+                </div>
+
+                <div>
+                  <label htmlFor="confirm-password" className="block text-sm font-medium text-gray-300 mb-1">
+                    Confirm Password
+                  </label>
+                  <input
+                    type="password"
+                    id="confirm-password"
+                    name="confirmPassword"
+                    value={formData.confirmPassword}
+                    onChange={handleChange}
+                    className={`form-input w-full rounded-md p-2 text-white ${errors.confirmPassword ? 'input-error' : ''}`}
+                    placeholder="Confirm your password"
+                  />
+                  {errors.confirmPassword && (
+                    <div className="form-error visible">{errors.confirmPassword}</div>
+                  )}
+                </div>
+
+                <div className="flex items-center">
                   <input
                     type="checkbox"
-                    name="rememberMe"
-                    checked={formData.rememberMe}
-                    onChange={handleChange}
-                    className="rounded border-[#37E2D520] text-jammify-teal focus:ring-jammify-teal"
+                    id="terms"
+                    name="terms"
+                    className="form-checkbox"
+                    required
                   />
-                  <span className="ml-2 text-sm">Remember me</span>
-                </label>
-                <a href="#" className="text-sm text-jammify-teal hover:text-white transition duration-300">
-                  Forgot password?
-                </a>
+                  <label htmlFor="terms" className="ml-2 block text-xs text-gray-300">
+                    I agree to the <Link to="#" className="text-jammify-teal hover:text-white">Terms</Link> and{' '}
+                    <Link to="#" className="text-jammify-teal hover:text-white">Privacy Policy</Link>
+                  </label>
               </div>
-            )}
-            
-            <button
-              type="submit"
-              className="w-full bg-jammify-teal text-[#16253f] py-3 rounded-md font-semibold hover:bg-opacity-90 transition duration-300"
-            >
-              {isLogin ? 'Sign In' : 'Sign Up'}
-            </button>
-          </form>
-          
-          <div className="mt-6 text-center">
-            <p className="text-sm text-gray-400">
-              {isLogin ? "Don't have an account?" : "Already have an account?"}{" "}
-              <button
-                onClick={() => setIsLogin(!isLogin)}
-                className="text-jammify-teal hover:text-white transition duration-300"
-              >
-                {isLogin ? 'Sign Up' : 'Sign In'}
-              </button>
-            </p>
-          </div>
-        </div>
-        
-        {/* Cover Section */}
-        <div className={`hidden md:block w-1/2 bg-gradient-to-br from-jammify-teal to-jammify-blue p-8 transition-transform duration-500 ${isLogin ? 'translate-x-0' : '-translate-x-full'}`}>
-          <div className="h-full flex flex-col justify-center items-center text-center text-white">
-            <h2 className="text-3xl font-display font-bold mb-4">
-              {isLogin ? 'Welcome Back!' : 'Hello, Friend!'}
-            </h2>
-            <p className="text-lg mb-8">
-              {isLogin
-                ? 'Enter your personal details and start your journey with us'
-                : 'Enter your personal details and start your journey with us'}
-            </p>
-            <div className="relative w-48 h-48">
-              <div className="absolute inset-0 bg-white/10 rounded-full animate-pulse"></div>
-              <div className="absolute inset-4 bg-white/5 rounded-full animate-pulse delay-75"></div>
-              <div className="absolute inset-8 bg-white/5 rounded-full animate-pulse delay-150"></div>
+
+                <button
+                  type="submit"
+                  disabled={isLoading}
+                  className="submit-btn w-full bg-jammify-teal text-[#16253f] py-2 rounded-md font-medium text-sm"
+                >
+                  {isLoading ? (
+                    <>
+                      <span>Creating Account...</span>
+                      <div className="spinner"></div>
+                    </>
+                  ) : (
+                    'Create Account'
+                  )}
+                </button>
+              </form>
             </div>
           </div>
+
+          {/* Mobile toggle view */}
+          {isMobile && (
+            <div id="mobile-toggle-view">
+              <p className="text-gray-300 text-sm text-center pb-4">
+                {isSignUp ? (
+                  <span>Already have an account? <button onClick={toggleView} className="text-jammify-teal">Log in</button></span>
+                ) : (
+                  <span>Need an account? <button onClick={toggleView} className="text-jammify-teal">Sign up</button></span>
+                )}
+              </p>
+            </div>
+          )}
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 

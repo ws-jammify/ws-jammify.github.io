@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import '../styles/Contact.css'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +13,9 @@ const Contact = () => {
   const [showSuccess, setShowSuccess] = useState(false)
 
   useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0)
+    
     AOS.init({
       once: true,
       mirror: false,
@@ -19,157 +23,168 @@ const Contact = () => {
     })
   }, [])
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // In a real application, you would send the form data to a server here
+    // Simulate form submission
     setShowSuccess(true)
-    setFormData({ name: '', email: '', subject: '', message: '' })
     setTimeout(() => setShowSuccess(false), 5000)
+    setFormData({ name: '', email: '', subject: '', message: '' })
   }
 
   const handleChange = (e) => {
-    const { name, value } = e.target
-    setFormData(prev => ({ ...prev, [name]: value }))
+    setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
   return (
-    <main className="flex-1">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-12 md:py-20">
-        <div className="max-w-3xl mx-auto text-center" data-aos="fade-up" data-aos-duration="1000">
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-jammify-teal bg-clip-text text-transparent">
-            Get in Touch
-          </h1>
-          <p className="text-gray-300 text-lg leading-relaxed font-light mb-8">
-            Have questions, suggestions, or just want to say hello? We'd love to hear from you. Our team is here to help and respond to your inquiries.
-          </p>
-        </div>
-      </section>
+      <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 py-20 bg-[#1A2C51]">
+        <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6" data-aos="fade-up">
+          Contact Us
+        </h1>
+        <p className="text-gray-300 max-w-3xl mx-auto text-lg" data-aos="fade-up" data-aos-delay="100">
+          Have questions or suggestions? We'd love to hear from you. Get in touch with our team and let's make music together.
+        </p>
 
-      {/* Contact Methods */}
-      <section className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* Email */}
-          <div className="contact-card glass-card p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-            <div className="contact-icon w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center bg-[#152238]/70 text-jammify-teal text-2xl">
-              <i className="fas fa-envelope"></i>
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mt-20">
+          <div className="glass-card p-8 rounded-xl backdrop-blur-sm bg-[#1E375F]/30 border border-jammify-teal/10" data-aos="fade-right">
+            <div className="w-16 h-16 bg-jammify-teal/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i className="fas fa-envelope text-2xl text-jammify-teal"></i>
             </div>
-            <h3 className="font-display text-xl font-semibold mb-3">Email Us</h3>
-            <p className="text-gray-300 text-sm font-light mb-4">
-              Send us an email anytime, we'll get back to you within 24 hours.
+            <h2 className="font-display text-2xl font-bold text-white mb-4">Email Us</h2>
+            <p className="text-gray-300 leading-relaxed">
+              support@jammify.com<br />
+              business@jammify.com
             </p>
-            <a href="mailto:support@jammify.com" className="text-jammify-teal hover:text-white transition duration-300">support@jammify.com</a>
           </div>
 
-          {/* Phone */}
-          <div className="contact-card glass-card p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-            <div className="contact-icon w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center bg-[#152238]/70 text-jammify-teal text-2xl">
-              <i className="fas fa-phone"></i>
+          <div className="glass-card p-8 rounded-xl backdrop-blur-sm bg-[#1E375F]/30 border border-jammify-teal/10" data-aos="fade-up">
+            <div className="w-16 h-16 bg-jammify-teal/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i className="fas fa-phone-alt text-2xl text-jammify-teal"></i>
             </div>
-            <h3 className="font-display text-xl font-semibold mb-3">Call Us</h3>
-            <p className="text-gray-300 text-sm font-light mb-4">
-              For immediate assistance, give us a call during business hours.
+            <h2 className="font-display text-2xl font-bold text-white mb-4">Call Us</h2>
+            <p className="text-gray-300 leading-relaxed">
+              +1 (555) 123-4567<br />
+              Mon-Fri, 9am-6pm PST
             </p>
-            <a href="tel:+1234567890" className="text-jammify-teal hover:text-white transition duration-300">+1 (234) 567-890</a>
           </div>
 
-          {/* Social */}
-          <div className="contact-card glass-card p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-            <div className="contact-icon w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center bg-[#152238]/70 text-jammify-teal text-2xl">
-              <i className="fas fa-comments"></i>
+          <div className="glass-card p-8 rounded-xl backdrop-blur-sm bg-[#1E375F]/30 border border-jammify-teal/10" data-aos="fade-left">
+            <div className="w-16 h-16 bg-jammify-teal/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i className="fas fa-map-marker-alt text-2xl text-jammify-teal"></i>
             </div>
-            <h3 className="font-display text-xl font-semibold mb-3">Social Media</h3>
-            <p className="text-gray-300 text-sm font-light mb-4">
-              Connect with us on social media for quick responses and updates.
+            <h2 className="font-display text-2xl font-bold text-white mb-4">Visit Us</h2>
+            <p className="text-gray-300 leading-relaxed">
+              221 Gil Carlos St.<br />
+              Baliwag City, Bulacan
             </p>
-            <div className="flex justify-center space-x-4">
-              <a href="#" className="social-icon w-10 h-10 rounded-full flex items-center justify-center bg-[#152238]/70 text-jammify-teal hover:text-white transition duration-300">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" className="social-icon w-10 h-10 rounded-full flex items-center justify-center bg-[#152238]/70 text-jammify-teal hover:text-white transition duration-300">
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" className="social-icon w-10 h-10 rounded-full flex items-center justify-center bg-[#152238]/70 text-jammify-teal hover:text-white transition duration-300">
-                <i className="fab fa-instagram"></i>
-              </a>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Contact Form */}
-      <section className="container mx-auto px-4 py-12 md:py-20">
-        <div className="max-w-2xl mx-auto">
-          <div className="glass-card p-8 md:p-12 rounded-2xl" data-aos="fade-up" data-aos-duration="1000">
-            <h2 className="font-display text-2xl md:text-3xl font-bold mb-8 text-center">Send Us a Message</h2>
+      {/* Contact Form Section */}
+      <section className="py-20 px-4 bg-[#1A2C51]/50">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16" data-aos="fade-up">
+            <h2 className="font-display text-3xl font-bold text-white mb-4">Send Us a Message</h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              Whether you have a question about features, pricing, or anything else, our team is ready to answer all your questions.
+            </p>
+          </div>
+
+          <div className="glass-card p-8 rounded-2xl backdrop-blur-sm bg-[#1E375F]/30 border border-jammify-teal/10" data-aos="fade-up" data-aos-delay="100">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">Your Name</label>
+                  <label htmlFor="name" className="block text-white text-sm font-medium mb-2">Your Name</label>
                   <input
                     type="text"
                     id="name"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="form-input"
-                    placeholder="John Doe"
                     required
+                    className="w-full px-4 py-3 rounded-lg bg-[#152238] border border-jammify-teal/10 text-white placeholder-gray-400 focus:outline-none focus:border-jammify-teal focus:ring-1 focus:ring-jammify-teal transition duration-200"
+                    placeholder="John Doe"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">Your Email</label>
+                  <label htmlFor="email" className="block text-white text-sm font-medium mb-2">Your Email</label>
                   <input
                     type="email"
                     id="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="form-input"
-                    placeholder="john@example.com"
                     required
+                    className="w-full px-4 py-3 rounded-lg bg-[#152238] border border-jammify-teal/10 text-white placeholder-gray-400 focus:outline-none focus:border-jammify-teal focus:ring-1 focus:ring-jammify-teal transition duration-200"
+                    placeholder="john@example.com"
                   />
                 </div>
               </div>
+
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium mb-2">Subject</label>
+                <label htmlFor="subject" className="block text-white text-sm font-medium mb-2">Subject</label>
                 <input
                   type="text"
                   id="subject"
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="form-input"
-                  placeholder="How can we help you?"
                   required
+                  className="w-full px-4 py-3 rounded-lg bg-[#152238] border border-jammify-teal/10 text-white placeholder-gray-400 focus:outline-none focus:border-jammify-teal focus:ring-1 focus:ring-jammify-teal transition duration-200"
+                  placeholder="How can we help?"
                 />
               </div>
+
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
+                <label htmlFor="message" className="block text-white text-sm font-medium mb-2">Message</label>
                 <textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  rows="5"
-                  className="form-input"
-                  placeholder="Your message here..."
                   required
+                  rows="6"
+                  className="w-full px-4 py-3 rounded-lg bg-[#152238] border border-jammify-teal/10 text-white placeholder-gray-400 focus:outline-none focus:border-jammify-teal focus:ring-1 focus:ring-jammify-teal transition duration-200 resize-none"
+                  placeholder="Your message..."
                 ></textarea>
               </div>
-              <div>
-                <button type="submit" className="form-button w-full md:w-auto">Send Message</button>
+
+              <div className="flex justify-center">
+                <button
+                  type="submit"
+                  className="px-8 py-3 bg-jammify-teal text-[#1c3057] font-semibold rounded-lg hover:bg-jammify-teal/90 focus:outline-none focus:ring-2 focus:ring-jammify-teal focus:ring-offset-2 focus:ring-offset-[#1A2C51] transition duration-200"
+                >
+                  Send Message
+                </button>
               </div>
             </form>
+
             {showSuccess && (
-              <div className="success-message mt-6 bg-green-900/30 text-green-400 p-4 rounded-md">
-                <i className="fas fa-check-circle mr-2"></i> Your message has been sent successfully! We'll get back to you soon.
+              <div className="mt-6 p-4 bg-green-500/20 border border-green-500/30 rounded-lg text-center">
+                <p className="text-green-400">Thank you! Your message has been sent successfully.</p>
               </div>
             )}
           </div>
         </div>
       </section>
-    </main>
+
+      {/* Social Links Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="font-display text-3xl font-bold text-white mb-8" data-aos="fade-up">Connect With Us</h2>
+          <div className="flex justify-center space-x-6" data-aos="fade-up" data-aos-delay="100">
+            <a href="mailto:codedelta2025@gmail.com" target="_blank" rel="noopener noreferrer" className="social-icon w-12 h-12 rounded-full flex items-center justify-center bg-[#152238]/70 text-jammify-teal hover:text-white transition duration-300">
+              <i className="fas fa-envelope text-xl"></i>
+            </a>
+            <a href="https://www.github.com/ws-jammify/" target="_blank" rel="noopener noreferrer" className="social-icon w-12 h-12 rounded-full flex items-center justify-center bg-[#152238]/70 text-jammify-teal hover:text-white transition duration-300">
+              <i className="fab fa-github text-xl"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
   )
 }
 
