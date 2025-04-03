@@ -1,0 +1,157 @@
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #121212;
+  color: white;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+/* Hide scrollbar but allow scrolling */
+.sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+}
+
+/* Logo area */
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  padding: 0 24px 20px;
+  margin-bottom: 10px;
+}
+
+.sidebar-logo img {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+
+.sidebar-logo span {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Menu sections */
+.sidebar-menu {
+  margin-bottom: 8px;
+}
+
+.sidebar-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 8px;
+}
+
+/* Menu items */
+.sidebar-menu a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  border-radius: 0;
+}
+
+.sidebar-menu a:hover {
+  color: white;
+}
+
+.sidebar-menu a.active {
+  color: white;
+}
+
+.sidebar-menu a.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #42d2cb;
+}
+
+.sidebar-menu a svg {
+  margin-right: 16px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  width: 24px;
+  text-align: center;
+}
+
+.sidebar-menu a:hover svg,
+.sidebar-menu a.active svg {
+  color: white;
+}
+
+/* Dividers */
+.sidebar-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  margin: 16px 24px;
+}
+
+/* Playlist heading */
+.sidebar-heading {
+  padding: 8px 24px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+}
+
+/* Playlist items */
+.user-playlists {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.user-playlists::-webkit-scrollbar {
+  width: 4px;
+}
+
+.user-playlists::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.user-playlists::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+}
+
+.user-playlists li {
+  margin-bottom: 8px;
+}
+
+.playlist-thumbnail {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  margin-right: 16px;
+  object-fit: cover;
+}

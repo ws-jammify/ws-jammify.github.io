@@ -1,0 +1,15 @@
+## Popular Artists
+- **Mariah Carey**
+- **Rihanna**
+- **Usher**
+- **Bruno Mars**
+- **Taylor Swift**
+- **Ne-Yo**
+- **BTS**
+- **Blackpink**
+- **Beyoncé**
+- **Chris Brown**
+- **Lady Gaga**
+- **Ariana Grande**
+- **Ed Sheeran**
+- **Arctic Monkeys**

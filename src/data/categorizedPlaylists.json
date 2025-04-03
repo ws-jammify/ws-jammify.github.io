@@ -1,0 +1,958 @@
+{
+  "playlists": [
+    {
+      "id": "opm-hits",
+      "name": "OPM Malala",
+      "description": "Pinoy music paden dabest",
+      "image": "/assets/images/playlists/opm.jpg",
+      "songs": [
+        {
+          "title": "Puhon",
+          "audioFile": "assets/audio/artists/tj_monterde_artist/audios/puhon.ogg",
+          "coverArt": "assets/audio/artists/tj_monterde_artist/covers/puhon.jpg",
+          "artist": "TJ Monterde"
+        },
+        {
+          "title": "Kung Siya Man",
+          "audioFile": "assets/audio/artists/tj_monterde_artist/audios/kung_siya_man.ogg",
+          "coverArt": "assets/audio/artists/tj_monterde_artist/covers/kung_siya_man.jpg",
+          "artist": "TJ Monterde"
+        },
+        {
+          "title": "Uhaw Tayong Lahat",
+          "audioFile": "assets/audio/artists/dilaw_artist/audios/uhaw_tayong_lahat.ogg",
+          "coverArt": "assets/audio/artists/dilaw_artist/covers/uhaw_tayong_lahat.jpg",
+          "artist": "Dilaw"
+        },
+        {
+          "title": "Nandito Lang Ako",
+          "audioFile": "assets/audio/artists/tj_monterde_artist/audios/nandito_lang_ako.ogg",
+          "coverArt": "assets/audio/artists/tj_monterde_artist/covers/nandito_lang_ako.jpg",
+          "artist": "TJ Monterde"
+        },
+        {
+          "title": "Marilag",
+          "audioFile": "assets/audio/artists/dionela_artist/audios/marilag.ogg",
+          "coverArt": "assets/audio/artists/dionela_artist/covers/marilag.jpg",
+          "artist": "Dionela"
+        },
+        {
+          "title": "Your Love",
+          "audioFile": "assets/audio/artists/juris_artist/audios/your_love.ogg",
+          "coverArt": "assets/audio/artists/juris_artist/covers/your_love.jpg",
+          "artist": "Juris"
+        },
+        {
+          "title": "Us",
+          "audioFile": "assets/audio/artists/tj_monterde_artist/audios/us.ogg",
+          "coverArt": "assets/audio/artists/tj_monterde_artist/covers/us.jpg",
+          "artist": "TJ Monterde"
+        },
+        {
+          "title": "153",
+          "audioFile": "assets/audio/artists/dionela_artist/audios/153.ogg",
+          "coverArt": "assets/audio/artists/dionela_artist/covers/153.jpg",
+          "artist": "Dionela"
+        },
+        {
+          "title": "Habang Buhay",
+          "audioFile": "assets/audio/artists/zack_tabudlo_artist/audios/habang_buhay.ogg",
+          "coverArt": "assets/audio/artists/zack_tabudlo_artist/covers/habang_buhay.jpg",
+          "artist": "Zack Tabudlo"
+        },
+        {
+          "title": "Give Me A Chance",
+          "audioFile": "assets/audio/artists/ric_segreto_artist/audios/give_me_a_chance.ogg",
+          "coverArt": "assets/audio/artists/ric_segreto_artist/covers/give_me_a_chance.jpg",
+          "artist": "Ric Segreto"
+        },
+        {
+          "title": "Misteryoso",
+          "audioFile": "assets/audio/artists/cup_of_joe_artist/audios/misteryoso.ogg",
+          "coverArt": "assets/audio/artists/cup_of_joe_artist/covers/misteryoso.jpg",
+          "artist": "Cup of Joe"
+        },
+        {
+          "title": "Palagi (TJxKZ Version)",
+          "audioFile": "assets/audio/artists/tj_monterde_artist/audios/palagi_tjxkz_version.ogg",
+          "coverArt": "assets/audio/artists/tj_monterde_artist/covers/palagi_tjxkz_version.jpg",
+          "artist": "TJ Monterde and KZ Tandingan"
+        },
+        {
+          "title": "Dilaw",
+          "audioFile": "assets/audio/artists/maki_artist/audios/dilaw.ogg",
+          "coverArt": "assets/audio/artists/maki_artist/covers/dilaw.jpg",
+          "artist": "Maki"
+        },
+        {
+          "title": "Salamin Salamin",
+          "audioFile": "assets/audio/artists/bini_artist/audios/salamin_salamin.ogg",
+          "coverArt": "assets/audio/artists/bini_artist/covers/salamin_salamin.jpg",
+          "artist": "BINI"
+        },
+        {
+          "title": "Pantropiko",
+          "audioFile": "assets/audio/artists/bini_artist/audios/pantropiko.ogg",
+          "coverArt": "assets/audio/artists/bini_artist/covers/pantropiko.jpg",
+          "artist": "BINI"
+        },
+        {
+          "title": "Namumula",
+          "audioFile": "assets/audio/artists/maki_artist/audios/namumula.ogg",
+          "coverArt": "assets/audio/artists/maki_artist/covers/namumula.jpg",
+          "artist": "Maki"
+        }, 
+        {
+          "title": "Binibini",
+          "audioFile": "assets/audio/artists/zack_tabudlo_artist/audios/binibini.ogg",
+          "coverArt": "assets/audio/artists/zack_tabudlo_artist/covers/binibini.jpg",
+          "artist":"Zack Tabudlo"
+        },
+        {
+          "title": "Pano",
+          "audioFile": "assets/audio/artists/zack_tabudlo_artist/audios/pano.ogg",
+          "coverArt": "assets/audio/artists/zack_tabudlo_artist/covers/pano.jpg",
+          "artist": "Zack Tabudlo"
+        },
+        {
+          "title": "Cherry On Top!",
+          "audioFile": "assets/audio/artists/bini_artist/audios/cherry_on_top.ogg",
+          "coverArt": "assets/audio/artists/bini_artist/covers/cherry_on_top.jpg",
+          "artist": "BINI"
+        },
+        {
+          "title": "Karera",
+          "audioFile": "assets/audio/artists/bini_artist/audios/karera.ogg",
+          "coverArt": "assets/audio/artists/bini_artist/covers/karera.jpg",
+          "artist": "BINI"
+        }
+      ]
+    },
+    {
+      "id": "rb-soul",
+      "name": "R&B collection",
+      "description": "R&B songs of all ages",
+      "image": "/assets/images/playlists/r_and_b.jpg",
+      "songs": [
+        {
+          "title": "So Sick",
+          "audioFile": "assets/audio/artists/neyo_artist/audios/so_sick.ogg",
+          "coverArt": "assets/audio/artists/neyo_artist/covers/so_sick.jpg",
+          "artist": "Ne-Yo"
+        },
+        {
+          "title": "Feelings Don't Lie",
+          "audioFile": "assets/audio/artists/chris_brown_artist/audios/feelings_don_t_lie.ogg",
+          "coverArt": "assets/audio/artists/chris_brown_artist/covers/feelings_don_t_lie.jpg",
+          "artist": "Chris Brown"
+        },
+        {
+          "title": "She Got Her Own",
+          "audioFile": "assets/audio/artists/neyo_artist/audios/she_got_her_own.ogg",
+          "coverArt": "assets/audio/artists/neyo_artist/covers/she_got_her_own.jpg",
+          "artist": "Ne-Yo"
+        },
+        {
+          "title": "Under The Influence",
+          "audioFile": "assets/audio/artists/chris_brown_artist/audios/under_the_influence.ogg",
+          "coverArt": "assets/audio/artists/chris_brown_artist/covers/under_the_influence.jpg",
+          "artist": "Chris Brown"
+        },
+        {
+          "title": "Fade Into The Background",
+          "audioFile": "assets/audio/artists/neyo_artist/audios/fade_into_the_background.ogg",
+          "coverArt": "assets/audio/artists/neyo_artist/covers/fade_into_the_background.jpg",
+          "artist": "Ne-Yo"
+        },
+        {
+          "title": "When We Were Young",
+          "audioFile": "assets/audio/artists/adele_artist/audios/when_we_were_young.ogg",
+          "coverArt": "assets/audio/artists/adele_artist/covers/when_we_were_young.jpg",
+          "artist": "Adele"
+        },
+        {
+          "title": "Intro",
+          "audioFile": "assets/audio/artists/usher_artist/audios/intro.ogg",
+          "coverArt": "assets/audio/artists/usher_artist/covers/intro.jpg",
+          "artist": "Usher"
+        },
+        {
+          "title": "Lost Stars",
+          "audioFile": "assets/audio/artists/adam_levine_artist/audios/lost_stars.ogg",
+          "coverArt": "assets/audio/artists/adam_levine_artist/covers/lost_stars.jpg",
+          "artist": "Adam Levine"
+        }
+      ]
+    },
+    {
+      "id": "kpop-hits",
+      "name": "K-Popanget",
+      "description": "Top Korean pop songs",
+      "image": "/assets/images/playlists/kpop.jpg",
+      "songs": [
+        {
+          "title": "Sugar Rush Ride",
+          "audioFile": "assets/audio/artists/tommorow_x_together_artist/audios/sugar_rush_ride.ogg",
+          "coverArt": "assets/audio/artists/tommorow_x_together_artist/covers/sugar_rush_ride.jpg",
+          "artist": "Tomorrow X Together"
+        },
+        {
+          "title": "Love Shot",
+          "audioFile": "assets/audio/artists/exo_artist/audios/love_shot.ogg",
+          "coverArt": "assets/audio/artists/exo_artist/covers/love_shot.jpg",
+          "artist": "EXO"
+        },
+        {
+          "title": "Boombayah",
+          "audioFile": "assets/audio/artists/blackpink_artist/audios/boombayah.ogg",
+          "coverArt": "assets/audio/artists/blackpink_artist/covers/boombayah.jpg",
+          "artist": "BLACKPINK"
+        },
+        {
+          "title": "How You Like That",
+          "audioFile": "assets/audio/artists/blackpink_artist/audios/how_you_like_that.ogg",
+          "coverArt": "assets/audio/artists/blackpink_artist/covers/how_you_like_that.jpg",
+          "artist": "Blackpink"
+        },
+        {
+          "title": "Hellevator",
+          "audioFile": "assets/audio/artists/stray_kids_artist/audios/hellevator.ogg",
+          "coverArt": "assets/audio/artists/stray_kids_artist/covers/hellevator.jpg",
+          "artist": "Stray Kids"
+        },
+        {
+          "title": "Forever Young",
+          "audioFile": "assets/audio/artists/blackpink_artist/audios/forever_young.ogg",
+          "coverArt": "assets/audio/artists/blackpink_artist/covers/forever_young.jpg",
+          "artist": "Blackpink"
+        },
+        {
+          "title": "Sticky",
+          "audioFile": "assets/audio/artists/kiss_of_life_artist/audios/sticky.ogg",
+          "coverArt": "assets/audio/artists/kiss_of_life_artist/covers/sticky.jpg",
+          "artist": "Kiss of Life"
+        },
+        {
+          "title": "Next Level",
+          "audioFile": "assets/audio/artists/aespa_artist/audios/next_level.ogg",
+          "coverArt": "assets/audio/artists/aespa_artist/covers/next_level.jpg",
+          "artist": "Aespa"
+        },
+        {
+          "title": "Boy With Luv Feat Halsey",
+          "audioFile": "assets/audio/artists/bts_artist/audios/boy_with_luv_feat_halsey.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/boy_with_luv_feat_halsey.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Dna",
+          "audioFile": "assets/audio/artists/bts_artist/audios/dna.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/dna.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Dynamite",
+          "audioFile": "assets/audio/artists/bts_artist/audios/dynamite.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/dynamite.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Love Scenario",
+          "audioFile": "assets/audio/artists/ikon_artist/audios/love_scenario.ogg",
+          "coverArt": "assets/audio/artists/ikon_artist/covers/love_scenario.jpg",
+          "artist": "iKON"
+        },
+        {
+          "title": "Not Shy",
+          "audioFile": "assets/audio/artists/itzy_artist/audios/not_shy.ogg",
+          "coverArt": "assets/audio/artists/itzy_artist/covers/not_shy.jpg",
+          "artist": "Itzy"
+        },
+        {
+          "title": "Seven",
+          "audioFile": "assets/audio/artists/jungkook_artist/audios/seven.ogg",
+          "coverArt": "assets/audio/artists/jungkook_artist/covers/seven.jpg",
+          "artist": "Jungkook"
+        }
+      ]
+    },
+    {
+      "id": "raps-on-fire",
+      "name": "Raps on Fire 🔥",
+      "description": "Hottest rap tracks that set the mic on fire",
+      "image": "/assets/images/playlists/rap.jpg",
+      "songs": [
+        {
+          "title": "God's Plan",
+          "audioFile": "assets/audio/artists/say_drake_artist/audios/gods_plan.ogg",
+          "coverArt": "assets/audio/artists/say_drake_artist/covers/gods_plan.jpg",
+          "artist": "Drake"
+        },
+        {
+          "title": "Hotline Bling",
+          "audioFile": "assets/audio/artists/say_drake_artist/audios/hotline_bling.ogg",
+          "coverArt": "assets/audio/artists/say_drake_artist/covers/hotline_bling.jpg",
+          "artist": "Drake"
+        },
+        {
+          "title": "Rich Baby Daddy",
+          "audioFile": "assets/audio/artists/say_drake_artist/audios/rich_baby_daddy.ogg",
+          "coverArt": "assets/audio/artists/say_drake_artist/covers/rich_baby_daddy.jpg",
+          "artist": "Drake"
+        },
+        {
+          "title": "SICKO MODE",
+          "audioFile": "assets/audio/artists/travis_scott_artist/audios/sicko_mode.ogg",
+          "coverArt": "assets/audio/artists/travis_scott_artist/covers/sicko_mode.jpg",
+          "artist": "Travis Scott"
+        },
+        {
+          "title": "Goosebumps",
+          "audioFile": "assets/audio/artists/travis_scott_artist/audios/goosebumps.ogg",
+          "coverArt": "assets/audio/artists/travis_scott_artist/covers/goosebumps.jpg",
+          "artist": "Travis Scott"
+        },
+        {
+          "title": "All The Stars",
+          "audioFile": "assets/audio/artists/kendrick_lamar_artist/audios/all_the_stars.ogg",
+          "coverArt": "assets/audio/artists/kendrick_lamar_artist/covers/all_the_stars.jpg",
+          "artist": "Kendrick Lamar"
+        },
+        {
+          "title": "Luther",
+          "audioFile": "assets/audio/artists/kendrick_lamar_artist/audios/luther.ogg",
+          "coverArt": "assets/audio/artists/kendrick_lamar_artist/covers/luther.jpg",
+          "artist": "Kendrick Lamar"
+        },
+        {
+          "title": "Not Like Us",
+          "audioFile": "assets/audio/artists/kendrick_lamar_artist/audios/not_like_us.ogg",
+          "coverArt": "assets/audio/artists/kendrick_lamar_artist/covers/not_like_us.jpg",
+          "artist": "Kendrick Lamar"
+        },
+        {
+          "title": "Rockstar",
+          "audioFile": "assets/audio/artists/post_malone_artist/audios/rockstar.ogg",
+          "coverArt": "assets/audio/artists/post_malone_artist/covers/rockstar.jpg",
+          "artist": "Post Malone"
+        },
+        {
+          "title": "Stay",
+          "audioFile": "assets/audio/artists/post_malone_artist/audios/stay.ogg",
+          "coverArt": "assets/audio/artists/post_malone_artist/covers/stay.jpg",
+          "artist": "Post Malone"
+        },
+        {
+          "title": "Industry Baby",
+          "audioFile": "assets/audio/artists/lil_nas_x_artist/audios/industry_baby.ogg",
+          "coverArt": "assets/audio/artists/lil_nas_x_artist/covers/industry_baby.jpg",
+          "artist": "Lil Nas X"
+        },
+        {
+          "title": "Old Town Road",
+          "audioFile": "assets/audio/artists/lil_nas_x_artist/audios/old_town_road.ogg",
+          "coverArt": "assets/audio/artists/lil_nas_x_artist/covers/old_town_road.jpg",
+          "artist": "Lil Nas X"
+        }
+      ]
+    },
+    {
+      "id": "senti-rito-senti-ron",
+      "name": "Senti Rito Senti Ron",
+      "description": "many sad songs",
+      "image": "/assets/images/playlists/senti.jpg",
+      "songs": [
+        {
+          "title": "drivers license",
+          "audioFile": "assets/audio/artists/olivia_rodrigo_artist/audios/drivers_license.ogg",
+          "coverArt": "assets/audio/artists/olivia_rodrigo_artist/covers/drivers_license.jpg",
+          "artist": "Olivia Rodrigo"
+        },
+        {
+          "title": "Someone You Loved",
+          "audioFile": "assets/audio/artists/lewis_capaldi_artist/audios/someone_you_loved.ogg",
+          "coverArt": "assets/audio/artists/lewis_capaldi_artist/covers/someone_you_loved.jpg",
+          "artist": "Lewis Capaldi"
+        },
+        {
+          "title": "Good 4 U",
+          "audioFile": "assets/audio/artists/olivia_rodrigo_artist/audios/good_4_u.ogg",
+          "coverArt": "assets/audio/artists/olivia_rodrigo_artist/covers/good_4_u.jpg",
+          "artist": "Olivia Rodrigo"
+        },
+        {
+          "title": "When We Were Young",
+          "audioFile": "assets/audio/artists/adele_artist/audios/when_we_were_young.ogg",
+          "coverArt": "assets/audio/artists/adele_artist/covers/when_we_were_young.jpg",
+          "artist": "Adele"
+        },
+        {
+          "title": "Someone Like You",
+          "audioFile": "assets/audio/artists/adele_artist/audios/someone_like_you.ogg",
+          "coverArt": "assets/audio/artists/adele_artist/covers/someone_like_you.jpg",
+          "artist": "Adele"
+        },
+        {
+          "title": "All of Me",
+          "audioFile": "assets/audio/artists/john_legend_artist/audios/all_of_me.ogg",
+          "coverArt": "assets/audio/artists/john_legend_artist/covers/all_of_me.jpg",
+          "artist": "John Legend"
+        },
+        {
+          "title": "Say You Won't Let Go",
+          "audioFile": "assets/audio/artists/james_arthur_artist/audios/say_you_wont_let_go.ogg",
+          "coverArt": "assets/audio/artists/james_arthur_artist/covers/say_you_wont_let_go.jpg",
+          "artist": "James Arthur"
+        },
+        {
+          "title": "Perfect",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/perfect.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/perfect.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Photograph",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/photograph.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/photograph.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Fix You",
+          "audioFile": "assets/audio/artists/coldplay_artist/audios/fix_you.ogg",
+          "coverArt": "assets/audio/artists/coldplay_artist/covers/fix_you.jpg",
+          "artist": "Coldplay"
+        },
+        {
+          "title": "Yellow",
+          "audioFile": "assets/audio/artists/coldplay_artist/audios/yellow.ogg",
+          "coverArt": "assets/audio/artists/coldplay_artist/covers/yellow.jpg",
+          "artist": "Coldplay"
+        },
+        {
+          "title": "Let Her Go",
+          "audioFile": "assets/audio/artists/passenger_artist/audios/let_her_go.ogg",
+          "coverArt": "assets/audio/artists/passenger_artist/covers/let_her_go.jpg",
+          "artist": "Passenger"
+        },
+        {
+          "title": "A Thousand Years",
+          "audioFile": "assets/audio/artists/christina_perri_artist/audios/a_thousand_years.ogg",
+          "coverArt": "assets/audio/artists/christina_perri_artist/covers/a_thousand_years.jpg",
+          "artist": "Christina Perri"
+        },
+        {
+          "title": "Need You Now",
+          "audioFile": "assets/audio/artists/lady_antebellum_artist/audios/need_you_now.ogg",
+          "coverArt": "assets/audio/artists/lady_antebellum_artist/covers/need_you_now.jpg",
+          "artist": "Lady Antebellum"
+        },
+        {
+          "title": "When I Was Your Man",
+          "audioFile": "assets/audio/artists/bruno_mars_artist/audios/when_i_was_your_man.ogg",
+          "coverArt": "assets/audio/artists/bruno_mars_artist/covers/when_i_was_your_man.jpg",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Too Good At Goodbyes",
+          "audioFile": "assets/audio/artists/sam_smith_artist/audios/too_good_at_goodbyes.ogg",
+          "coverArt": "assets/audio/artists/sam_smith_artist/covers/too_good_at_goodbyes.jpg",
+          "artist": "Sam Smith"
+        }
+      ]
+    },
+    {
+      "id": "blackpink-playlist",
+      "name": "BLINKIES <3",
+      "description": "Fresh tracks and latest hits",
+      "image": "/assets/images/playlists/blinkies.jpg",
+      "songs": [
+        {
+          "title": "As If Its Your Last",
+          "audioFile": "assets/audio/artists/blackpink_artist/audios/as_if_its_your_last.ogg",
+          "coverArt": "assets/audio/artists/blackpink_artist/covers/as_if_its_your_last.jpg",
+          "artist": "BLACKPINK"
+        },
+        {
+          "title": "Boombayah",
+          "audioFile": "assets/audio/artists/blackpink_artist/audios/boombayah.ogg",
+          "coverArt": "assets/audio/artists/blackpink_artist/covers/boombayah.jpg",
+          "artist": "BLACKPINK"
+        },
+        {
+          "title": "Whistle",
+          "audioFile": "assets/audio/artists/blackpink_artist/audios/whistle.ogg",
+          "coverArt": "assets/audio/artists/blackpink_artist/covers/whistle.jpg",
+          "artist": "BLACKPINK"
+        },
+        {
+          "title": "Kill this Love",
+          "audioFile": "assets/audio/artists/blackpink_artist/audios/kill_this_love.ogg",
+          "coverArt": "assets/audio/artists/blackpink_artist/covers/kill_this_love.jpg",
+          "artist": "BLACKPINK"
+        },
+        {
+          "title": "DDU-DU-DDU-DU",
+          "audioFile": "assets/audio/artists/blackpink_artist/audios/ddu_du_ddu_du.ogg",
+          "coverArt": "assets/audio/artists/blackpink_artist/covers/ddu_du_ddu_du.jpg",
+          "artist": "BLACKPINK"
+        },
+        {
+          "title": "Playing with Fire",
+          "audioFile": "assets/audio/artists/blackpink_artist/audios/playing_with_fire.ogg",
+          "coverArt": "assets/audio/artists/blackpink_artist/covers/playing_with_fire.jpg",
+          "artist": "BLACKPINK"
+        },
+        {
+          "title": "Forever Young",
+          "audioFile": "assets/audio/artists/blackpink_artist/audios/forever_young.ogg",
+          "coverArt": "assets/audio/artists/blackpink_artist/covers/forever_young.jpg",
+          "artist": "BLACKPINK"
+        },
+        {
+          "title": "Lovesick Girls",
+          "audioFile": "assets/audio/artists/blackpink_artist/audios/lovesick_girls.ogg",
+          "coverArt": "assets/audio/artists/blackpink_artist/covers/lovesick_girls.jpg",
+          "artist": "BLACKPINK"
+        },
+        {
+          "title": "How You Like That",
+          "audioFile": "assets/audio/artists/blackpink_artist/audios/how_you_like_that.ogg",
+          "coverArt": "assets/audio/artists/blackpink_artist/covers/how_you_like_that.jpg",
+          "artist": "BLACKPINK"
+        },
+        {
+          "title": "Shut Down",
+          "audioFile": "assets/audio/artists/blackpink_artist/audios/shut_down.ogg",
+          "coverArt": "assets/audio/artists/blackpink_artist/covers/shut_down.jpg",
+          "artist": "BLACKPINK"
+        },
+        {
+          "title": "Pink Venom",
+          "audioFile": "assets/audio/artists/blackpink_artist/audios/pink_venom.ogg",
+          "coverArt": "assets/audio/artists/blackpink_artist/covers/pink_venom.jpg",
+          "artist": "BLACKPINK"
+        }
+      ]
+    },
+    {
+      "id": "old-but-gold",
+      "name": "Old But Gold",
+      "description": "Timeless classics that never go out of style",
+      "image": "/assets/images/playlists/old_but_gold.jpg",
+      "songs": [
+        {
+          "title": "Can't Help Falling In Love",
+          "audioFile": "assets/audio/artists/elvis_presley_artist/audios/cant_help_falling_in_love.ogg",
+          "coverArt": "assets/audio/artists/elvis_presley_artist/covers/cant_help_falling_in_love.jpg",
+          "artist": "Elvis Presley"
+        },
+        {
+          "title": "Fly Me to the Moon",
+          "audioFile": "assets/audio/artists/frank_sinatra_artist/audios/fly_me_to_the_moon.ogg",
+          "coverArt": "assets/audio/artists/frank_sinatra_artist/covers/fly_me_to_the_moon.jpg",
+          "artist": "Frank Sinatra"
+        },
+        {
+          "title": "What a Wonderful World",
+          "audioFile": "assets/audio/artists/louis_armstrong_artist/audios/what_a_wonderful_world.ogg",
+          "coverArt": "assets/audio/artists/louis_armstrong_artist/covers/what_a_wonderful_world.jpg",
+          "artist": "Louis Armstrong"
+        },
+        {
+          "title": "Ang Huling El Bimbo",
+          "audioFile": "assets/audio/artists/eraserheads_artist/audios/ang_huling_el_bimbo.ogg",
+          "coverArt": "assets/audio/artists/eraserheads_artist/covers/ang_huling_el_bimbo.jpg",
+          "artist": "Eraserheads"
+        },
+        {
+          "title": "Sweet Child O' Mine",
+          "audioFile": "assets/audio/artists/guns_and_roses_artist/audios/sweet_child_o_mine.ogg",
+          "coverArt": "assets/audio/artists/guns_and_roses_artist/covers/sweet_child_o_mine.jpg",
+          "artist": "Guns N' Roses"
+        },
+        {
+          "title": "My Heart Will Go On",
+          "audioFile": "assets/audio/artists/celine_dion_artist/audios/my_heart_will_go_on.ogg",
+          "coverArt": "assets/audio/artists/celine_dion_artist/covers/my_heart_will_go_on.jpg",
+          "artist": "Celine Dion"
+        },
+        {
+          "title": "I Will Always Love You",
+          "audioFile": "assets/audio/artists/whitney_houston_artist/audios/i_will_always_love_you.ogg",
+          "coverArt": "assets/audio/artists/whitney_houston_artist/covers/i_will_always_love_you.jpg",
+          "artist": "Whitney Houston"
+        },
+        {
+          "title": "In The End",
+          "audioFile": "assets/audio/artists/linkin_park_artist/audios/in_the_end.ogg",
+          "coverArt": "assets/audio/artists/linkin_park_artist/covers/in_the_end.jpg",
+          "artist": "Linkin Park"
+        },
+        {
+          "title": "Bring Me To Life",
+          "audioFile": "assets/audio/artists/evanescence_artist/audios/bring_me_to_life.ogg",
+          "coverArt": "assets/audio/artists/evanescence_artist/covers/bring_me_to_life.jpg",
+          "artist": "Evanescence"
+        },
+        {
+          "title": "Elesi",
+          "audioFile": "assets/audio/artists/rivermaya_artist/audios/elesi.ogg",
+          "coverArt": "assets/audio/artists/rivermaya_artist/covers/elesi.jpg",
+          "artist": "Rivermaya"
+        },
+        {
+          "title": "Tadhana",
+          "audioFile": "assets/audio/artists/up_dharma_down_artist/audios/tadhana.ogg",
+          "coverArt": "assets/audio/artists/up_dharma_down_artist/covers/tadhana.jpg",
+          "artist": "Up Dharma Down"
+        },
+        {
+          "title": "You're Still The One",
+          "audioFile": "assets/audio/artists/shania_twain_artist/audios/youre_still_the_one.ogg",
+          "coverArt": "assets/audio/artists/shania_twain_artist/covers/youre_still_the_one.jpg",
+          "artist": "Shania Twain"
+        },
+        {
+          "title": "We Belong Together",
+          "audioFile": "assets/audio/artists/mariah_carey_artist/audios/we_belong_together.ogg",
+          "coverArt": "assets/audio/artists/mariah_carey_artist/covers/we_belong_together.jpg",
+          "artist": "Mariah Carey"
+        },
+        {
+          "title": "Rolling In The Deep",
+          "audioFile": "assets/audio/artists/adele_artist/audios/rolling_in_the_deep.ogg",
+          "coverArt": "assets/audio/artists/adele_artist/covers/rolling_in_the_deep.jpg",
+          "artist": "Adele"
+        },
+        {
+          "title": "Someone Like You",
+          "audioFile": "assets/audio/artists/adele_artist/audios/someone_like_you.ogg",
+          "coverArt": "assets/audio/artists/adele_artist/covers/someone_like_you.jpg",
+          "artist": "Adele"
+        },
+        {
+          "title": "All of Me",
+          "audioFile": "assets/audio/artists/john_legend_artist/audios/all_of_me.ogg",
+          "coverArt": "assets/audio/artists/john_legend_artist/covers/all_of_me.jpg",
+          "artist": "John Legend"
+        },
+        {
+          "title": "Fix You",
+          "audioFile": "assets/audio/artists/coldplay_artist/audios/fix_you.ogg",
+          "coverArt": "assets/audio/artists/coldplay_artist/covers/fix_you.jpg",
+          "artist": "Coldplay"
+        },
+        {
+          "title": "Yellow",
+          "audioFile": "assets/audio/artists/coldplay_artist/audios/yellow.ogg",
+          "coverArt": "assets/audio/artists/coldplay_artist/covers/yellow.jpg",
+          "artist": "Coldplay"
+        },
+        {
+          "title": "You'll Be Safe Here",
+          "audioFile": "assets/audio/artists/rico_blanco_artist/audios/youll_be_safe_here.ogg",
+          "coverArt": "assets/audio/artists/rico_blanco_artist/covers/youll_be_safe_here.jpg",
+          "artist": "Rico Blanco"
+        }
+      ]
+    },
+    {
+      "id": "sheerios",
+      "name": "Sheerios",
+      "description": "die hard Ed Sheeran fan",
+      "image": "/assets/images/playlists/sheerios.jpg",
+      "songs": [
+        {
+          "title": "Shape of You",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/shape_of_you.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/shape_of_you.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Afterglow",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/afterglow.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/afterglow.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Bad Habits",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/bad_habits.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/bad_habits.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Bloodstream",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/bloodstream.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/bloodstream.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Castle On The Hill",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/castle_on_the_hill.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/castle_on_the_hill.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Dive",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/dive.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/dive.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Dont",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/dont.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/dont.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Eyes Closed",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/eyes_closed.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/eyes_closed.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Galway Girl",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/galway_girl.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/galway_girl.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Give Me Love",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/give_me_love.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/give_me_love.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Happier",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/happier.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/happier.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Im A Mess",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/im_a_mess.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/im_a_mess.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "I See Fire",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/i_see_fire__ed_sheeran.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/i_see_fire.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Make It Rain",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/make_it_rain.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/make_it_rain.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "One",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/one.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/one.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Perfect",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/perfect.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/perfect.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Photograph",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/photograph.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/photograph.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Shirtsleeves",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/shirtsleeves.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/shirtsleeves.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Shivers",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/shivers.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/shivers.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Supermarket Flowers",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/supermarket_flowers.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/supermarket_flowers.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Tenerife Sea",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/tenerife_sea.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/tenerife_sea.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "The A Team",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/the_a_team__ed_sheeran.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/the_a_team.jpg",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Thinking Out Loud",
+          "audioFile": "assets/audio/artists/ed_sheeran_artist/audios/thinking_out_loud.ogg",
+          "coverArt": "assets/audio/artists/ed_sheeran_artist/covers/thinking_out_loud.jpg",
+          "artist": "Ed Sheeran"
+        }
+      ]
+    },
+    {
+      "id": "bts-army",
+      "name": "Army 💜",
+      "description": "For the love of BTS and ARMY",
+      "image": "/assets/images/playlists/army.jpg",
+      "songs": [
+        {
+          "title": "Airplane Pt2",
+          "audioFile": "assets/audio/artists/bts_artist/audios/airplane_pt2.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/airplane_pt2.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Black Swan",
+          "audioFile": "assets/audio/artists/bts_artist/audios/black_swan.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/black_swan.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Boy With Luv Feat Halsey",
+          "audioFile": "assets/audio/artists/bts_artist/audios/boy_with_luv_feat_halsey.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/boy_with_luv_feat_halsey.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Butter",
+          "audioFile": "assets/audio/artists/bts_artist/audios/butter.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/butter.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Dimple",
+          "audioFile": "assets/audio/artists/bts_artist/audios/dimple.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/dimple.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Dionysus",
+          "audioFile": "assets/audio/artists/bts_artist/audios/dionysus.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/dionysus.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "DNA",
+          "audioFile": "assets/audio/artists/bts_artist/audios/dna.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/dna.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Dynamite",
+          "audioFile": "assets/audio/artists/bts_artist/audios/dynamite.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/dynamite.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Epiphany",
+          "audioFile": "assets/audio/artists/bts_artist/audios/epiphany.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/epiphany.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Euphoria",
+          "audioFile": "assets/audio/artists/bts_artist/audios/euphoria.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/euphoria.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Fake Love",
+          "audioFile": "assets/audio/artists/bts_artist/audios/fake_love.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/fake_love.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Filter",
+          "audioFile": "assets/audio/artists/bts_artist/audios/filter.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/filter.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Friends",
+          "audioFile": "assets/audio/artists/bts_artist/audios/friends.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/friends.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Go Go",
+          "audioFile": "assets/audio/artists/bts_artist/audios/go_go.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/go_go.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Her",
+          "audioFile": "assets/audio/artists/bts_artist/audios/her.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/her.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "IDOL",
+          "audioFile": "assets/audio/artists/bts_artist/audios/idol.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/idol.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Make It Right",
+          "audioFile": "assets/audio/artists/bts_artist/audios/make_it_right.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/make_it_right.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Mic Drop",
+          "audioFile": "assets/audio/artists/bts_artist/audios/mic_drop.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/mic_drop.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Moon",
+          "audioFile": "assets/audio/artists/bts_artist/audios/moon.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/moon.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "ON",
+          "audioFile": "assets/audio/artists/bts_artist/audios/on.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/on.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Permission to Dance",
+          "audioFile": "assets/audio/artists/bts_artist/audios/permission_to_dance.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/permission_to_dance.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Take Two",
+          "audioFile": "assets/audio/artists/bts_artist/audios/take_two.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/take_two.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "Tear",
+          "audioFile": "assets/audio/artists/bts_artist/audios/tear.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/tear.jpg",
+          "artist": "BTS"
+        },
+        {
+          "title": "The Truth Untold",
+          "audioFile": "assets/audio/artists/bts_artist/audios/the_truth_untold.ogg",
+          "coverArt": "assets/audio/artists/bts_artist/covers/the_truth_untold.jpg",
+          "artist": "BTS"
+        }
+      ]
+    }
+  ]
+} 
