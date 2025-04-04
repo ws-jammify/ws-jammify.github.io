@@ -118,7 +118,7 @@ const MusicPlayer = () => {
         {/* Genre Section */}
         <section className="section-container">
           <div className="section-header">
-            <h2 className="section-title">Genre <a href="#" className="show-all">Show all</a></h2>
+            <h2 className="section-title">Genre</h2>
             <div className="section-nav">
               <button className="nav-button" onClick={() => handleScroll(genreRef, 'left')}>
                 <FaChevronLeft />
@@ -152,7 +152,7 @@ const MusicPlayer = () => {
         {/* Popular Songs Section */}
         <section className="section-container">
           <div className="section-header">
-            <h2 className="section-title">Popular Songs <a href="#" className="show-all">Show all</a></h2>
+            <h2 className="section-title">Popular Songs</h2>
             <div className="section-nav">
               <button className="nav-button" onClick={() => handleScroll(popularSongsRef, 'left')}>
                 <FaChevronLeft />

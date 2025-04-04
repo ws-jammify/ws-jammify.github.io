@@ -58,97 +58,90 @@
     },
     {
       "id": 10,
-      "title": "Cruel Summer",
-      "artist": "Taylor Swift",
-      "image": "/assets/audio/artists/taylor_swift_artist/covers/cruel_summer.jpg",
-      "audioSrc": "/assets/audio/artists/taylor_swift_artist/audios/cruel_summer.ogg"
-    },
-    {
-      "id": 11,
       "title": "Huwag Muna Tayong Umuwi",
       "artist": "BINI",
       "image": "/assets/audio/artists/bini_artist/covers/huwag_muna_tayong_umuwi.jpg",
       "audioSrc": "/assets/audio/artists/bini_artist/audios/huwag_muna_tayong_umuwi.ogg"
     },
     {
-      "id": 12,
+      "id": 11,
       "title": "Not Like Us",
       "artist": "Kendrick Lamar",
       "image": "/assets/audio/artists/kendrick_lamar_artist/covers/not_like_us.jpg",
       "audioSrc": "/assets/audio/artists/kendrick_lamar_artist/audios/not_like_us.ogg"
     },
     {
-      "id": 13,
+      "id": 12,
       "title": "Araw-araw",
       "artist": "Ben&Ben",
       "image": "/assets/audio/artists/ben_and_ben_artist/covers/araw_araw.jpg",
       "audioSrc": "/assets/audio/artists/ben_and_ben_artist/audios/araw_araw.ogg"
     },
     {
-      "id": 14,
+      "id": 13,
       "title": "Shape of You",
       "artist": "Ed Sheeran",
       "image": "/assets/audio/artists/ed_sheeran_artist/covers/shape_of_you.jpg",
       "audioSrc": "/assets/audio/artists/ed_sheeran_artist/audios/shape_of_you.ogg"
     },
     {
-      "id": 15,
+      "id": 14,
       "title": "Permission to Dance",
       "artist":"BTS",
       "image": "/assets/audio/artists/bts_artist/covers/permission_to_dance.jpg",
       "audioSrc": "/assets/audio/artists/bts_artist/audios/permission_to_dance.ogg"
     },
     {
-      "id": 16,
+      "id": 15,
       "title": "APT",
       "artist": "Rose",
       "image": "/assets/audio/artists/rose_artist/covers/apt.jpg",
       "audioSrc": "/assets/audio/artists/rose_artist/audios/apt.ogg"
     },
     {
-      "id": 17,
+      "id": 16,
       "title": "Please Please Please",
       "artist": "Sabrina Carpenter",
       "image": "/assets/audio/artists/sabrina_carpenter_artist/covers/please_please_please.jpg",
       "audioSrc": "/assets/audio/artists/sabrina_carpenter_artist/audios/please_please_please.ogg"
     },
     {
-      "id": 18,
+      "id": 17,
       "title": "Kathang Isip",
       "artist": "Ben&Ben",
       "image": "/assets/audio/artists/ben_and_ben_artist/covers/kathang_isip.jpg",
       "audioSrc": "/assets/audio/artists/ben_and_ben_artist/audios/kathang_isip.ogg"
     },
     {
-      "id": 19,
+      "id": 18,
       "title": "Birds of a Feather",
       "artist": "Billie Eilish",
       "image": "/assets/audio/artists/billie_eilish_artist/covers/birds_of_a_feather.jpg",
       "audioSrc": "/assets/audio/artists/billie_eilish_artist/audios/birds_of_a_feather.ogg"
     },
     {
-      "id": 20,
+      "id": 19,
       "title": "Cherry on Top",
       "artist": "BINI",
       "image": "/assets/audio/artists/bini_artist/covers/cherry_on_top.jpg",
       "audioSrc": "/assets/audio/artists/bini_artist/audios/cherry_on_top.ogg"
     },
     {
-      "id": 21,
+      "id": 20,
       "title": "My Boo",
       "artist": "Usher",
       "image": "/assets/audio/artists/usher_artist/covers/my_boo.jpg",
       "audioSrc": "/assets/audio/artists/usher_artist/audios/my_boo.ogg"
     },
     {
-      "id": 22,
+      "id": 21,
       "title": "The Man Who Cant Be Moved",
       "artist": "The Script",
       "image": "/assets/audio/artists/the_script_artist/covers/the_man_who_cant_be_moved.jpg",
       "audioSrc": "/assets/audio/artists/the_script_artist/audios/the_man_who_cant_be_moved.ogg"
     },
     {
-      "id": 23,
+      "id": 22,
       "title": "Ikaw lang",
       "artist": "NOBITA",
       "image": "/assets/audio/artists/nobita_artist/covers/ikaw_lang.jpg",
