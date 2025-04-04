@@ -9,15 +9,6 @@
   "skills": ["Leadership", "Project Management", "Team Coordination", "Problem Solving", "Strategic Planning"]
 },
 {
-  "name": "Katrina Dela Cruz",
-  "role": "Assistant Programmer",
-  "formal-image": "/assets/images/about-images/katrina/formal.png",
-  "casual-image": "/assets/images/about-images/katrina/casual-1.png",
-  "casual-image-2": "/assets/images/about-images/katrina/casual-2.png",
-  "description": "The creative and passionate member in making her craft—Katrina is the assistant programmer of the team. The idea behind the concept of Jammify came from Katrina's creative mind. She played a big part in designing Jammify's interface. She helped in providing data to be included in the website. Furthermore, she contributed to forming the features of Jammify and developing them, ensuring that it is aesthetically pleasing and easy to navigate. ",
-  "skills": ["Creative Design", "Content Creation", "Data Collection", "UI Design", "Research"]
-},
-{
   "name": "Angel Gonzales",
   "role": "Lead Researcher",
   "formal-image": "/assets/images/about-images/angel/formal.png",
@@ -36,13 +27,13 @@
   "skills": ["JavaScript", "HTML/CSS", "Responsive Design", "UI/UX", "jQuery"]
 },
 {
-  "name": "Renz Fernando",
-  "role": "UI/UX Assistant Designer",
-  "formal-image": "/assets/images/about-images/renz/formal.png",
-  "casual-image": "/assets/images/about-images/renz/casual-1.png",
-  "casual-image-2": "/assets/images/about-images/renz/casual-2.png",
-  "description": "Having an innovative and imaginative mind, Renz is the assistant UI/UX designer of the team. He contributed to designing some portions of Jammify's interface. He also assisted in collecting data to place on the website. He also contributed to creating the documentation of the project. On top of that, he lends a hand in developing the website to quicken the completion of the project.",
-  "skills": ["UI/UX Design", "Graphic Design", "Web Design", "Data Collection", "Documentation"]
+  "name": "Katrina Dela Cruz",
+  "role": "Assistant Programmer",
+  "formal-image": "/assets/images/about-images/katrina/formal.png",
+  "casual-image": "/assets/images/about-images/katrina/casual-1.png",
+  "casual-image-2": "/assets/images/about-images/katrina/casual-2.png",
+  "description": "The creative and passionate member in making her craft—Katrina is the assistant programmer of the team. The idea behind the concept of Jammify came from Katrina's creative mind. She played a big part in designing Jammify's interface. She helped in providing data to be included in the website. Furthermore, she contributed to forming the features of Jammify and developing them, ensuring that it is aesthetically pleasing and easy to navigate. ",
+  "skills": ["Creative Design", "Content Creation", "Data Collection", "UI Design", "Research"]
 },
 {
   "name": "Ajy Garcia",
@@ -52,5 +43,15 @@
   "casual-image-2": "/assets/images/about-images/ajy/casual-2.png",
   "description": "Ajy is the UI/UX designer of the team. He led in designing the website and including innovative features in the website. He manages the entire design of Jammify, ensuring that it is visually pleasing and that users will frequently visit and use Jammify. Besides, he cooperated in collecting data to be placed on the site. He also helped in the development of Jammify to quicken the accomplishment of the project.",
   "skills": ["UI/UX Design", "Graphic Design", "Web Design", "Data Collection", "Development"]
+},
+{
+  "name": "Renz Fernando",
+  "role": "Assistant UI/UX Designer",
+  "formal-image": "/assets/images/about-images/renz/formal.png",
+  "casual-image": "/assets/images/about-images/renz/casual-1.png",
+  "casual-image-2": "/assets/images/about-images/renz/casual-2.png",
+  "description": "Having an innovative and imaginative mind, Renz is the assistant UI/UX designer of the team. He contributed to designing some portions of Jammify's interface. He also assisted in collecting data to place on the website. He also contributed to creating the documentation of the project. On top of that, he lends a hand in developing the website to quicken the completion of the project.",
+  "skills": ["UI/UX Design", "Graphic Design", "Web Design", "Data Collection", "Documentation"]
 }
+
 ] 
